@@ -59,7 +59,7 @@ h1 {
 }
 
 p {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     color: var(--main-gray)
 }
 
