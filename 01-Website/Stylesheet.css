@@ -1,0 +1,566 @@
+/* ***** BASE-STYLES ***** */
+/* CUSTOM VARIABLES  */
+:root {
+    --main-white: #f0f0f0;
+    --main-gray: rgb(77, 77, 77);
+    --darker-gray: rgb(60, 60, 60);
+
+    /* title */
+    --fs-600: 2rem;
+    /* button */
+    --fs-500: 1.5rem;
+    /* subtitle */
+    --fs-400: 1.25rem;
+    /* normaltext */
+    --fs-300: 1rem;
+    /* copyright */
+    --fs-200: 0.75rem;
+}
+
+/* RESET BASE */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* RESET BOX/FONT-SIZE */
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+/* BASE STYLES */
+body {
+    font-family: Courier, monospace;
+    font-size: var(--fs-300);
+    line-height: 1.5;
+    color: var(--main-gray);
+    background-image: linear-gradient(180deg,
+            rgba(240, 248, 255, 0.66) 50%,
+            rgba(153, 153, 153, 0.66) 90%,
+            rgba(85, 85, 85, 0.66) 100%),
+        url(../assets/背景/subtle-patterns-.com-white_wall_hash.webp);
+    background-repeat: repeat;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--fs-600);
+    color: var(--main-gray);
+}
+
+p {
+    font-size: var(--fs-400);
+    color: var(--main-gray)
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: var(--fs-400);
+}
+
+button {
+    font-family: courier, monospace;
+    ;
+    font-size: var(--fs-400);
+}
+
+button a {
+    font-size: var(--fs-500);
+}
+
+/* ***** ANIMATION ***** */
+/* FADEIN ANIMATION */
+/* https://codepen.io/JTBennett/pen/BjpXRo */
+.fade-in {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* BUTTON HIGHLIGHT ANIMATION */
+/* https://ui-buttons.web.app/material-ripple */
+
+.btn-highlight {
+    position: relative;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    mask-image: radial-gradient(#000, #fff);
+    overflow: hidden;
+}
+
+.btn-highlight:before {
+    opacity: 0.2;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    /* TODO: semi-fix */
+    /* height: 100%; */
+    animation: enlarge 1.5s infinite;
+}
+
+@keyframes enlarge {
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.33);
+    }
+}
+
+/* ***** BORDER TESTING ***** */
+/* .welcome,
+.welcome .hero,
+.welcome .title,
+.welcome .hero .hero-links-container,
+.welcome .hero .hero-links-container button,
+.about p,
+.about .slideshow-box,
+.scores,
+.scores button,
+.nav,
+.nav ul,
+.nav ul li a,
+.nav-2,
+.posters,
+.posters img,
+footer,
+footer .other-links-container,
+footer .other-links-container a,
+footer .other-links-container i,
+footer .copyright {
+    border: solid red;
+} */
+
+/* * {
+    border: solid red;
+} */
+
+/* ***** SECTIONS ***** */
+/* WELCOME */
+
+/* NAV */
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 2.5rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5rem;
+}
+
+.nav-list a {
+    display: flex;
+    color: var(--main-gray);
+    font-size: var(--fs-300);
+    transition: all 0.33s ease-out;
+}
+
+.nav-list a:hover {
+    transform: scale(110%);
+}
+
+.nav-2 {
+    position: relative;
+    text-decoration: underline;
+}
+
+/* HERO */
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: clamp(40rem, 80svh, 90svh);
+    padding: 1rem;
+    /* HORIZONTAL LAYOUT */
+    max-width: 40rem;
+    margin: 50px auto;
+    /* STYLING */
+    border-radius: 50px;
+    box-shadow: 0px 0px 33px #333333;
+    background-image: url(../assets/背景/mountains-bottom.jpg);
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.welcome .hero {
+    max-height: 100%;
+    max-width: 30rem;
+    min-width: 60%;
+}
+
+.welcome .hero .title p {
+    font-weight: 300;
+}
+
+.welcome .hero .title #zh-spacing {
+    margin-top: 8px;
+}
+
+.welcome .hero .hero-links-container button {
+    display: block;
+    margin: 2.5rem auto;
+    color: black;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 2.5;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 1px 3.33px #333333;
+    transition: all 0.5s ease-out;
+}
+
+.welcome .hero .hero-links-container button a {
+    display: block;
+    transition: all 0.33s ease-out;
+}
+
+.welcome .hero .hero-links-container button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 1px 9.99px #888888;
+}
+
+.welcome .hero .hero-links-container button a:hover {
+    color: black;
+}
+
+/* ABOUT */
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+    padding-top: 5rem;
+    /* HORIZONTAL LAYOUT */
+    max-width: 40rem;
+    margin: 50px auto;
+    /* STYLING */
+    border-radius: 50px;
+    box-shadow: 0px 0px 33px #333333;
+    background: #dddddd;
+    background-image: url(../assets/背景/mountains-bottom-被裁切.jpg);
+    background-repeat: repeat-y;
+}
+
+.about p {
+    font-size: var(--fs-300);
+    text-align: left;
+    color: var(--darker-gray);
+}
+
+.about p .slideshow-box {
+    width: 5.5rem;
+    height: 5.5rem;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.about p .slideshow-box img {
+    max-width: 5.5rem;
+    max-height: 5.5rem;
+    position: absolute;
+    -webkit-animation-name: cycle;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    animation-name: cycle;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+/* CYCLE IMAGE ANIMATION */
+/* https://jsfiddle.net/5M2PD/4/ */
+@-webkit-keyframes cycle {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cycle {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#f1 {
+    -webkit-animation-delay: -0s;
+    animation-delay: -0s;
+}
+
+#f2 {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+/* SCORES */
+.scores {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    padding-top: 5rem;
+    min-height: 80svh;
+    /* HORIZONTAL LAYOUT */
+    max-width: 40rem;
+    margin: 50px auto;
+    /* STYLING */
+    border-radius: 50px;
+    box-shadow: 0px 0px 33px #333333;
+    background: #dddddd;
+    background-image: url(../assets/背景/mountains-bottom-被裁切.jpg);
+    background-repeat: repeat-y;
+    font-family: courier, monospace;
+}
+
+.scores .collapsible,
+.scores .content p {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.scores .content p {
+    padding: 1rem
+}
+
+.scores iframe {
+    width: 100%;
+    height: 40rem;
+}
+
+/* COLLAPSIBLE */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.2s ease-out; */
+    background-color: #f1f1f1;
+}
+
+/* POSTERS */
+.posters {
+    display: flex;
+    height: 200px;
+    margin: 0 auto 50px auto;
+    max-width: 40rem;
+    /* Scrolling */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 5% 95%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 5% 95%,
+            transparent);
+    overflow: hidden;
+}
+
+.posters img {
+    margin: 0rem 0.5rem;
+    animation: slide 100s infinite linear;
+}
+
+.posters .square {
+    border-radius: 25px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-8*(200px + 0.5rem - 5px)));
+    }
+}
+
+/* FOOTER */
+footer {
+    margin: 0 auto;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .other-links-container {
+    text-shadow: 0px 0px 5px #1f1f1f;
+    text-shadow: 0px 0px 5px var(--main-gray);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(6, 1fr); */
+}
+
+footer .other-links-container .other-links-btn {
+    margin: 0 1rem;
+}
+
+footer .other-links-container .other-links-btn i {
+    display: block;
+    font-size: var(--fs-500);
+    transition: all 0.5s ease-out;
+}
+
+footer .other-links-container .other-links-btn i:hover {
+    scale: 125%;
+}
+
+footer .copyright {
+    margin: 2rem 0;
+    color: white;
+    font-size: var(--fs-200);
+}
+
+#logo {
+    position: fixed;
+    height: 3.33vh;
+    bottom: 1rem;
+    left: 1rem;
+    opacity: 33%;
+}
+
+/* *****RESPONSIVE-DESIGN***** */
+/* hit side margin equal to top margin of hero card */
+@media (max-width: calc(40rem + 100px)) {
+
+    .welcome,
+    .about,
+    .scores,
+    .posters,
+    footer {
+        max-width: calc(100% - 50px);
+    }
+
+    .welcome,
+    .about,
+    .scores {
+        margin: 25px auto;
+    }
+
+    .posters {
+        margin-bottom: 25px;
+    }
+}
+
+/* Background Size */
+@media (min-height: 1130px) {
+
+    .welcome,
+    .about,
+    .scores {
+        background-size: 100% 100%;
+    }
+}
+
+/* Background Size */
+@media (max-width: 66.66vh) {
+
+    .welcome {
+        background-size: 100% 100%;
+    }
+}
+
+/* Adjust font-sizes for mobile */
+@media (max-width: 50vh) {
+
+    html {
+        font-size: 0.825rem;
+    }
+
+    .posters {
+        height: 150px;
+    }
+}

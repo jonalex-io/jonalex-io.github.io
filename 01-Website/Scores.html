@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="collapsible.css">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/solid.css">
+</head>
+
+<body>
+    <!-- SCORES -->
+    <section id="scores" class="scores fade-in">
+        <!-- NAV -->
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="./Home.html">◂<!--❮-->Home</a>
+                </li>
+                <li id="language">
+                    <a href="./樂譜.html">中/英</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- TOGGLES -->
+        <!-- <button class="collapsible">(????-??-??) Guitar Trio</button>
+        <div class="content">
+            <button class="collapsible">(????-??-??) I - "???"</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+        </div> -->
+        <button class="collapsible">(????-??-??) Wind Quintet</button>
+        <div class="content">
+            <button class="collapsible">(????-??-??) II - "The Valley"</button>
+            <div class="content">
+                <p>Originally intended as a prelude to my Brass Quintet, the following is my initial sketch:</p>
+                <iframe src="../assets/樂譜/00-銅管五重奏-前奏曲-The-Valley.pdf" frameborder="0"></iframe>
+            </div>
+        </div>
+        <button class="collapsible">(2023-05-05) Brass Quintet</button>
+        <div class="content">
+            <button class="collapsible">(2023-01-01) I - "Source"</button>
+            <div class="content">
+                <p>"Source" marks what I would consider my first successful attempt at applying formal structure to a
+                    composition and is the first movement of three in a brass quintet written for my graduation recital
+                    at the University of Lethbridge.</p>
+                <iframe src="../assets/樂譜/03-銅管五重奏-I-Source.pdf" frameborder="0"></iframe>
+            </div>
+            <button class="collapsible">(2022-08-15) II - "The Dip"</button>
+            <div class="content">
+                <p>Inspired by Seth Godin's book of the same title, "The Dip" is the first chamber piece I have fully
+                    notated and is the second movement of three in a brass quintet written for my graduation recital
+                    at the University of Lethbridge.</p>
+                <iframe src="../assets/樂譜/22-銅管五重奏-II-The-Dip.pdf" frameborder="0"></iframe>
+            </div>
+            <button class="collapsible">(2023-05-05) III - "Exit Strategy"</button>
+            <div class="content">
+                <p>“Exit Strategy” is the final movement of three in a brass quintet written for my graduation recital
+                    at the University of Lethbridge.</p>
+                <iframe src="../assets/樂譜/02-銅管五重奏-III-Exit-Strategy.pdf" frameborder="0"></iframe>
+            </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "100%";
+                    }
+                });
+            }
+        </script>
+    </section>
+
+    <!-- FOOTER + OTHER LINKS-->
+    <footer>
+        <div class="other-links-container">
+            <a href="https://www.instagram.com/jonalex.io/" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@jonalex_io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="https://twitter.com/jonalex_io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:inquiries@jonalex.io" class="btn other-links-btn">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/jonalex-io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com/jonalex.io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+        <p class="copyright">copyright jonalex.io</p>
+    </footer>
+</body>
+
+</html>
