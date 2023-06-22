@@ -558,6 +558,15 @@ footer .copyright {
     .posters {
         height: 150px;
     }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    .welcome .hero .title p {
+        font-size: var(--fs-200);
+    }
 }
 
 @media screen and (max-device-width: 50vh) {
