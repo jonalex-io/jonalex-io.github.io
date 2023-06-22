@@ -569,7 +569,7 @@ footer .copyright {
     }
 
     .welcome .hero .title p {
-        /* font-size: var(--fs-200); */
+        font-size: 0.8rem;
     }
 }
 
@@ -580,6 +580,6 @@ footer .copyright {
     }
 
     .welcome .hero .title p {
-        /* font-size: var(--fs-200); */
+        font-size: 0.8rem;
     }
 }
