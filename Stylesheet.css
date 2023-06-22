@@ -555,16 +555,15 @@ footer .copyright {
 
 /* Adjust font-sizes for mobile */
 @media (max-width: 50vh) {
-
-    html {
-        font-size: 1rem;
-    }
-
-    .welcome .hero p {
-        font-size: var(--fs-200);
-    }
-
     .posters {
         height: 150px;
+    }
+}
+
+@media screen and (max-device-width: 50vh) {
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        font-size: 0.8rem;
     }
 }
