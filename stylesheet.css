@@ -563,23 +563,15 @@ footer .copyright {
         height: 150px;
     }
 
-    .welcome .hero .title p {
-        font-size: 0.5rem;
+    p {
+        font-size: var(--fs-300);
+        color: var(--main-gray)
     }
-
-    html {
-        font-size: 0.5rem;
-    }
-
 }
 
 @media screen and (max-device-width: 50vh) {
-
-    .welcome .hero .title p {
-        font-size: 0.5rem;
-    }
-
-    html {
-        font-size: 0.5rem;
+    p {
+        font-size: var(--fs-300);
+        color: var(--main-gray)
     }
 }
