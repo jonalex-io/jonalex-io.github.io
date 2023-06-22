@@ -11,6 +11,8 @@
     --fs-500: 1.5rem;
     /* subtitle */
     --fs-400: 1.25rem;
+    /* workaround */
+    --fs-350: 1.125rem;
     /* normaltext */
     --fs-300: 1rem;
     /* copyright */
@@ -59,7 +61,7 @@ h1 {
 }
 
 p {
-    font-size: var(--fs-300);
+    font-size: var(--fs-350);
     color: var(--main-gray)
 }
 
@@ -562,16 +564,6 @@ footer .copyright {
     .posters {
         height: 150px;
     }
-
-    p {
-        font-size: var(--fs-300);
-        color: var(--main-gray)
-    }
 }
 
-@media screen and (max-device-width: 50vh) {
-    p {
-        font-size: var(--fs-300);
-        color: var(--main-gray)
-    }
-}
+@media screen and (max-device-width: 50vh) {}
