@@ -58,11 +58,13 @@ h1 {
     font-weight: 500;
     font-size: var(--fs-600);
     color: var(--main-gray);
+    text-size-adjust: none;
 }
 
 p {
     font-size: var(--fs-350);
-    color: var(--main-gray)
+    color: var(--main-gray);
+    text-size-adjust: none;
 }
 
 ul {
