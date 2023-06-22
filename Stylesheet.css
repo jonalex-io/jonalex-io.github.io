@@ -557,7 +557,7 @@ footer .copyright {
 @media (max-width: 50vh) {
 
     html {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     .posters {
