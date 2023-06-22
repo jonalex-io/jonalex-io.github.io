@@ -43,7 +43,7 @@ body {
             rgba(240, 248, 255, 0.66) 50%,
             rgba(153, 153, 153, 0.66) 90%,
             rgba(85, 85, 85, 0.66) 100%),
-        url(../assets/背景/subtle-patterns-.com-white_wall_hash.webp);
+        url(./assets/背景/subtle-patterns-.com-white_wall_hash.webp);
     background-repeat: repeat;
 }
 
@@ -205,7 +205,7 @@ footer .copyright {
     /* STYLING */
     border-radius: 50px;
     box-shadow: 0px 0px 33px #333333;
-    background-image: url(../assets/背景/mountains-bottom.jpg);
+    background-image: url(./assets/背景/mountains-bottom.jpg);
     background-position: bottom;
     background-size: 100% auto;
 }
@@ -268,7 +268,7 @@ footer .copyright {
     border-radius: 50px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
-    background-image: url(../assets/背景/mountains-bottom-被裁切.jpg);
+    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
     background-repeat: repeat-y;
 }
 
@@ -369,7 +369,7 @@ footer .copyright {
     border-radius: 50px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
-    background-image: url(../assets/背景/mountains-bottom-被裁切.jpg);
+    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
     background-repeat: repeat-y;
     font-family: courier, monospace;
 }
