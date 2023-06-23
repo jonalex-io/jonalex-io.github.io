@@ -579,7 +579,7 @@ footer .copyright {
 /* Adjust font-sizes for mobile */
 @media (max-width: 50vh) {
     .posters {
-        height: 150px;
+        /* height: 150px; */
     }
 }
 
