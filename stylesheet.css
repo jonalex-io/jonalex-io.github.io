@@ -215,7 +215,6 @@ footer .copyright {
     /* height: 80svh; */
     /* height: clamp(35rem, 80vh, 70rem); */
     /* height: clamp(35rem, 80svh, 70rem); */
-    min-height: 80vh;
     min-height: 80svh;
     padding: 1rem;
     /* HORIZONTAL LAYOUT */
