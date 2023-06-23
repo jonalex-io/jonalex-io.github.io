@@ -210,7 +210,7 @@ footer .copyright {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: clamp(40rem, 80svh, 90svh);
+    height: clamp(35rem, 80svh, 90svh);
     padding: 1rem;
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
