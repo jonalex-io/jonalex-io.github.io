@@ -371,10 +371,9 @@ footer .copyright {
     align-items: center;
     padding: 2.5rem;
     padding-top: 5rem;
-    min-height: 80vh;
-    min-height: 80svh;
+    min-height: 35rem;
     /* HORIZONTAL LAYOUT */
-    max-width: 40rem;
+    max-width: 35rem;
     margin: 50px auto;
     /* STYLING */
     border-radius: 50px;
