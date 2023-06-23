@@ -396,6 +396,18 @@ footer .copyright {
 .scores iframe {
     width: 100%;
     height: 40rem;
+    margin-top: 1rem;
+}
+
+.scores .content audio {
+    width: 100%;
+    margin-bottom: -0.5rem;
+}
+
+.scores .content a {
+    color: var(--main-gray);
+    text-decoration: underline;
+    font-size: var(--fs-250);
 }
 
 /* COLLAPSIBLE */
