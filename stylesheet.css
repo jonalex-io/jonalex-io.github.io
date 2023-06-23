@@ -211,8 +211,8 @@ footer .copyright {
     justify-content: center;
     text-align: center;
     /* browser height support redundancy */
-    min-height: clamp(35rem, 80vh, 70rem);
-    min-height: clamp(35rem, 80svh, 70rem);
+    height: clamp(35rem, 80vh, 70rem);
+    height: clamp(35rem, 80svh, 70rem);
     padding: 1rem;
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
