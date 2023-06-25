@@ -578,11 +578,11 @@ footer .copyright {
 @media only screen and (max-width: 414px) {
     :root {
         /* Adjust your font-size variables to smaller values */
-        /* --fs-600: 1.75rem;
+        --fs-600: 1.7rem;
         --fs-500: 1.25rem;
         --fs-400: 1.125;
         --fs-350: 1rem;
         --fs-300: 0.875rem;
-        --fs-200: 0.625rem; */
+        --fs-200: 0.625rem;
     }
 }
