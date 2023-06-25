@@ -15,8 +15,6 @@
     --fs-350: 1.125rem;
     /* normaltext */
     --fs-300: 1rem;
-    /* workaround */
-    --fs-250: 0.825rem;
     /* copyright */
     --fs-200: 0.75rem;
 }
@@ -411,7 +409,7 @@ footer .copyright {
 .scores .content a {
     color: var(--main-gray);
     text-decoration: underline;
-    font-size: var(--fs-250);
+    font-size: var(--fs-300);
 }
 
 /* COLLAPSIBLE */
@@ -580,24 +578,11 @@ footer .copyright {
 @media only screen and (max-width: 414px) {
     :root {
         /* Adjust your font-size variables to smaller values */
-        --fs-600: 1.5rem;
+        --fs-600: 1.75rem;
         --fs-500: 1.25rem;
-        --fs-400: 1rem;
-        --fs-350: 0.875rem;
-        --fs-300: 0.75rem;
-        --fs-250: 0.625rem;
-        --fs-200: 0.5625rem;
-    }
-}
-
-@media (max-width: 414px) {
-    :root {
-        --fs-600: 1.5rem;
-        --fs-500: 1.25rem;
-        --fs-400: 1rem;
-        --fs-350: 0.875rem;
-        --fs-300: 0.75rem;
-        --fs-250: 0.625rem;
-        --fs-200: 0.5625rem;
+        --fs-400: 1.125;
+        --fs-350: 1rem;
+        --fs-300: 0.875rem;
+        --fs-200: 0.625rem;
     }
 }
