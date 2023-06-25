@@ -31,7 +31,7 @@
 /* RESET BOX/FONT-SIZE */
 html {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: var(--fs-300);
     scroll-behavior: smooth;
 
     -moz-text-size-adjust: none;
@@ -386,7 +386,7 @@ footer .copyright {
 
 .scores .collapsible,
 .scores .content p {
-    font-size: 1rem;
+    font-size: var(--fs-300);
     text-align: left;
     width: 100%;
 }
@@ -422,7 +422,7 @@ footer .copyright {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1rem;
+    font-size: var(--fs-300);
 }
 
 .active,
