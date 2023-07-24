@@ -46,11 +46,12 @@ body {
     line-height: 1.5;
     color: var(--main-gray);
     background-image: linear-gradient(180deg,
-            rgba(240, 248, 255, 0.66) 50%,
-            rgba(153, 153, 153, 0.66) 90%,
-            rgba(85, 85, 85, 0.66) 100%),
-        url(./assets/背景/subtle-patterns-.com-white_wall_hash.webp);
+            rgba(240, 248, 255, 0.90) 50%,
+            rgba(153, 153, 153, 0.90) 90%,
+            rgba(085, 085, 085, 1.00) 100%),
+        url(./assets/背景/IMG_5226-gaussian-5-壓縮.jpeg);
     background-repeat: repeat;
+    background-position: center;
 }
 
 h1 {
@@ -211,6 +212,7 @@ footer .copyright {
     /* browser height support redundancy */
     height: clamp(35rem, 80vh, 70rem);
     height: clamp(35rem, 80svh, 70rem);
+    /* height: clamp(35rem, 45rem, 70rem); */
     padding: 1rem;
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
@@ -221,6 +223,13 @@ footer .copyright {
     background-image: url(./assets/背景/mountains-bottom.jpg);
     background-position: bottom;
     background-size: 100% auto;
+}
+
+.welcome i {
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    margin: 0;
+    padding: 0;
 }
 
 .welcome .hero {
