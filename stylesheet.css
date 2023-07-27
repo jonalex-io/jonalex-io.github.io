@@ -46,10 +46,10 @@ body {
     line-height: 1.5;
     color: var(--main-gray);
     background-image: linear-gradient(180deg,
-            rgba(240, 248, 255, 0.90) 50%,
-            rgba(153, 153, 153, 0.90) 90%,
+            rgba(235, 245, 255, 0.65) 50%,
+            rgba(155, 155, 155, 0.75) 80%,
             rgba(085, 085, 085, 1.00) 100%),
-        url(./assets/背景/IMG_5226-gaussian-5-壓縮.jpeg);
+        url(./assets/背景/mountains-bottom-被裁切.jpg);
     background-repeat: repeat;
     background-position: center;
 }
