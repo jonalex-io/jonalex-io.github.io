@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Scores | Jonathan Alexander | Composer, Producer, Musician</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
+    <link rel=" stylesheet" href="collapsible.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
+</head>
+
+<body>
+    <!-- SCORES -->
+    <section id="scores" class="scores fade-in">
+        <!-- NAV -->
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="./index.html">◂<!--❮-->Home</a>
+                </li>
+                <li id="language">
+                    <a href="./樂譜.html">中/英</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="collapsible">(????-??-??) "Untitled" #Fantasy #Metroidvania</button>
+        <div class="content">
+            <p>The following cue was written for a 2D action side-scroller. The cue is designed to loop infinitely as
+                background music for a forest fantasy level and employs my first sampler instrument, a toy ukelele.</p>
+            <audio type="audio/mpeg" controls preload="none" src="./assets/audio/16.2-glint-&-gloom-軌道一號.mp3"></audio>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "100%";
+                    }
+                });
+            }
+        </script>
+    </section>
+
+    <!-- FOOTER + OTHER LINKS-->
+    <footer>
+        <div class="other-links-container">
+            <a href="https://www.instagram.com/jonalex.io/" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@jonalex_io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="https://twitter.com/jonalex_io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:inquiries@jonalex.io" class="btn other-links-btn">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/jonalex-io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com/jonalex.io" target="_blank" class="btn other-links-btn">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+        <p class="copyright">copyright jonalex.io</p>
+    </footer>
+
+    <!-- LOGO -->
+    <img src="./assets/頭拍/頭拍-00-compressed.jpg" id="logo" alt="logo">
+</body>
+
+</html>
