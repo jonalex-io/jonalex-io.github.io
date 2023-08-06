@@ -509,6 +509,7 @@ footer .copyright {
 .posters img {
     margin: 0rem 0.5rem;
     animation: slide 100s infinite linear;
+    pointer-events: none;
 }
 
 .posters .square {
