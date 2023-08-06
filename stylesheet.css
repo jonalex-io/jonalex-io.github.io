@@ -92,6 +92,10 @@ button a {
     font-size: var(--fs-500);
 }
 
+img {
+    pointer-events: none;
+}
+
 /* ***** ANIMATION ***** */
 /* FADEIN ANIMATION */
 /* https://codepen.io/JTBennett/pen/BjpXRo */
@@ -282,7 +286,7 @@ footer .copyright {
     padding-top: 5rem;
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
-    margin: 50px auto;
+    margin: 37.5px auto;
     /* STYLING */
     border-radius: 50px;
     box-shadow: 0px 0px 33px #333333;
@@ -315,6 +319,8 @@ footer .copyright {
     animation-iteration-count: infinite;
     animation-duration: 8s;
 }
+
+
 
 /* CYCLE IMAGE ANIMATION */
 /* https://jsfiddle.net/5M2PD/4/ */
@@ -509,7 +515,6 @@ footer .copyright {
 .posters img {
     margin: 0rem 0.5rem;
     animation: slide 100s infinite linear;
-    pointer-events: none;
 }
 
 .posters .square {
