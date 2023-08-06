@@ -47,8 +47,8 @@ body {
     color: var(--main-gray);
     background-image: linear-gradient(180deg,
             /* rgba(235, 245, 255, 0.65) 50%, */
-            rgba(220, 230, 240, 0.65) 50%,
-            rgba(155, 155, 155, 0.75) 80%,
+            rgba(220, 230, 240, 0.6) 50%,
+            rgba(155, 155, 155, 0.7) 80%,
             rgba(085, 085, 085, 1.00) 100%),
         url(./assets/背景/mountains-bottom-被裁切.jpg);
     background-repeat: repeat;
@@ -466,18 +466,27 @@ footer .copyright {
 
 /* POSTERS */
 .posters-divider {
-    margin: 0 auto 7.5px auto;
+    margin: 0 auto 0 auto;
     max-width: 40rem;
 }
 
 .posters-divider p {
-    margin-top: 2.5px;
-    color: white;
-    font-size: var(--fs-200)
+    color: #e8e8e8;
+    font-size: var(--fs-200);
+    margin: 5px 15px;
+    margin-bottom: 7.5px;
 }
 
 .posters-divider hr {
     border: 1px dotted #e8e8e8;
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 2.5% 97.5%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 2.5% 97.5%,
+            transparent);
 }
 
 .posters {
