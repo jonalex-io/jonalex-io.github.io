@@ -540,6 +540,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 footer .other-links-container {
@@ -570,6 +571,10 @@ footer .copyright {
     margin: 2rem 0;
     color: white;
     font-size: var(--fs-200);
+}
+
+footer .copyright #version {
+    color: #777;
 }
 
 #logo {
