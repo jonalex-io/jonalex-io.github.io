@@ -218,7 +218,6 @@ footer .copyright {
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
     margin: 50px auto;
-    margin-bottom: 50px;
     /* STYLING */
     border-radius: 50px;
     box-shadow: 0px 0px 33px #333333;
@@ -467,24 +466,18 @@ footer .copyright {
 
 /* POSTERS */
 .posters-divider {
-    margin: 0 auto 0 auto;
+    margin: 0 auto 7.5px auto;
     max-width: 40rem;
-    margin-bottom: 25px;
 }
 
 .posters-divider p {
+    margin-top: 2.5px;
     color: white;
-    text-align: center;
-    font-size: var(--fs-300);
+    font-size: var(--fs-200)
 }
 
-.posters-divider hr#solid-1 {
-    border: 1px solid white;
-}
-
-.posters-divider hr#solid-2 {
-    border-top: 1px solid white;
-    border-bottom: 1px solid lightgray;
+.posters-divider hr {
+    border: 1px dotted #e8e8e8;
 }
 
 .posters {
@@ -593,7 +586,7 @@ footer .copyright {
     .welcome,
     .about,
     .scores {
-        margin: 25px auto;
+        margin-top: 25px;
     }
 
     .posters {
