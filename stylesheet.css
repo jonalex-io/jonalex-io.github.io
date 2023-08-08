@@ -55,7 +55,14 @@ body {
             rgba(155, 155, 155, 0.825) 80%,
             rgba(085, 085, 085, 1.000) 100%),
         url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
-    background-size: 100% 100%;
+    /* background-image: linear-gradient(180deg,
+            rgba(210, 220, 230, 0.5) 20rem,
+            rgba(155, 155, 155, 0.75) 40rem,
+            rgba(085, 085, 085, 1.000) 80rem),
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg); */
+    /* background-size: 100% auto; */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
