@@ -54,7 +54,7 @@ body {
             rgba(210, 220, 230, 0.666) 50%,
             rgba(155, 155, 155, 0.825) 80%,
             rgba(085, 085, 085, 1.000) 100%),
-        url(./assets/背景/porcupine-hills-alltrails-upscale-2.jpeg);
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL-R66-Y33.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
