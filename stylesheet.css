@@ -45,14 +45,18 @@ body {
     font-size: var(--fs-300);
     line-height: 1.5;
     color: var(--main-gray);
-    background-image: linear-gradient(180deg,
-            /* rgba(235, 245, 255, 0.65) 50%, */
-            rgba(220, 230, 240, 0.6) 50%,
+    /* background-image: linear-gradient(180deg,
+            rgba(210, 220, 230, 0.6) 50%,
             rgba(155, 155, 155, 0.7) 80%,
             rgba(085, 085, 085, 1.00) 100%),
-        url(./assets/背景/mountains-bottom-被裁切.jpg);
-    background-repeat: repeat;
-    background-position: center;
+        url(./assets/背景/mountains-bottom-被裁切.jpg); */
+    background-image: linear-gradient(180deg,
+            rgba(210, 220, 230, 0.666) 50%,
+            rgba(155, 155, 155, 0.825) 80%,
+            rgba(085, 085, 085, 1.000) 100%),
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 h1 {
