@@ -234,7 +234,7 @@ footer .copyright {
     max-width: 40rem;
     margin: 37.5px auto;
     /* STYLING */
-    border-radius: 50px;
+    border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     background-image: url(./assets/背景/mountains-bottom.jpg);
     background-position: bottom;
@@ -300,7 +300,7 @@ footer .copyright {
     max-width: 40rem;
     margin: 37.5px auto;
     /* STYLING */
-    border-radius: 50px;
+    border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
     background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
@@ -404,7 +404,7 @@ footer .copyright {
     max-width: 40rem;
     margin: 50px auto;
     /* STYLING */
-    border-radius: 50px;
+    border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
     background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
