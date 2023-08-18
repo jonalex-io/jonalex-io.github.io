@@ -396,8 +396,9 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     /* padding: 2.5rem; */
-    padding: 5rem 0rem 3.5rem 0rem;
-    min-height: 35rem;
+    padding: 5rem 0rem 2.25rem 0rem;
+    min-height: 80vh;
+    min-height: 80svh;
     /* HORIZONTAL LAYOUT */
     max-width: 40rem;
     margin: 50px auto;
@@ -437,6 +438,14 @@ footer .copyright {
     color: var(--main-gray);
     text-decoration: underline;
     font-size: var(--fs-300);
+}
+
+.scores .nav-2 {
+    margin-top: auto;
+}
+
+.scores #spacer {
+    height: 1rem;
 }
 
 /* COLLAPSIBLE */
