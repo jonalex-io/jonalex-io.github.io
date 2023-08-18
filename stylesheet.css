@@ -238,7 +238,8 @@ footer .copyright {
     box-shadow: 0px 0px 33px #333333;
     background-image: url(./assets/背景/mountains-bottom.jpg);
     background-position: bottom;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
+    background-size: cover;
 }
 
 .welcome i {
