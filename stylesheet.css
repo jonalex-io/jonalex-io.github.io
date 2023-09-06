@@ -443,6 +443,7 @@ footer .copyright {
 
 .scores .content audio {
     width: 100%;
+    padding: 0 1rem 0 1rem;
 }
 
 .scores .content a {
