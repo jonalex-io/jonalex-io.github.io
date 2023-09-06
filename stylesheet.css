@@ -490,15 +490,22 @@ footer .copyright {
 }
 
 .content {
-    padding: 0 0 0 8px;
     max-height: 0;
     overflow: hidden;
     /* transition: max-height 0.2s ease-out; */
     background-color: #f1f1f1;
 }
 
+.content .collapsible {
+    margin-left: 0.66rem;
+}
+
+.content .collapsible:first-of-type {
+    margin-top: 1rem;
+}
+
 .content .score-container {
-    padding-right: 16px;
+    margin-left: 0.66rem;
 }
 
 /* POSTERS */
