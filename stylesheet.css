@@ -553,7 +553,7 @@ footer .copyright {
 
 .posters img {
     margin: 0rem 0.5rem;
-    animation: slide 100s infinite linear;
+    animation: slide 75s infinite linear;
 }
 
 .posters .square {
@@ -573,7 +573,7 @@ footer .copyright {
     }
 
     100% {
-        transform: translateX(calc(-8*(200px + 0.5rem - 5px)));
+        transform: translateX(calc(-9*(200px + 0.5rem - 5px)));
     }
 }
 
