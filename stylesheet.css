@@ -518,11 +518,18 @@ footer .copyright {
 .posters-divider p {
     color: #e8e8e8;
     font-size: var(--fs-200);
-    margin: 7.5px 15px;
+    font-size: var(--fs-300);
+    /* margin: 7.5px 15px; */
     margin-bottom: 10px;
+    border-left: 2.5px dotted rgba(232, 232, 232, 0.75);
+    border-top: 2.5px dotted rgba(232, 232, 232, 0.75);
+    border-top-left-radius: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: max-content;
 }
 
-.posters-divider hr {
+/* .posters-divider hr {
     border: 1px dotted #e8e8e8;
     -webkit-mask-image: linear-gradient(to right,
             transparent,
@@ -532,7 +539,7 @@ footer .copyright {
             transparent,
             black 2.5% 97.5%,
             transparent);
-}
+} */
 
 .posters {
     display: flex;
