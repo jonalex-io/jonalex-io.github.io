@@ -50,22 +50,22 @@ body {
             rgba(155, 155, 155, 0.7) 80%,
             rgba(085, 085, 085, 1.00) 100%),
         url(./assets/背景/mountains-bottom-被裁切.jpg); */
-    background-image: linear-gradient(180deg,
+    /* background-image: linear-gradient(180deg,
             rgba(210, 220, 230, 0.666) 50%,
             rgba(155, 155, 155, 0.825) 80%,
             rgba(085, 085, 085, 1.000) 100%),
-        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
-    background-image: linear-gradient(180deg,
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg); */
+    /* background-image: linear-gradient(180deg,
             rgba(200, 210, 220, 0.666) 50%,
             rgba(90, 90, 90, 0.825) 80%,
             rgba(33, 33, 33, 1.000) 100%),
-        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
-    /* background-image: linear-gradient(180deg,
-            rgba(210, 220, 230, 0.5) 20rem,
-            rgba(155, 155, 155, 0.75) 40rem,
-            rgba(085, 085, 085, 1.000) 80rem),
         url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg); */
-    /* background-size: 100% auto; */
+    background-image: linear-gradient(180deg,
+            rgba(200, 210, 220, 0.666) 45%,
+            rgba(100, 100, 100, 0.825) 65%,
+            rgba(67, 67, 67, 0.825) 85%,
+            rgba(33, 33, 33, 1.000) 100%),
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
