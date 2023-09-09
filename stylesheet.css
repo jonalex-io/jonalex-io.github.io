@@ -61,6 +61,7 @@ body {
             rgba(33, 33, 33, 1.000) 100%),
         url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg); */
     background-image: linear-gradient(180deg,
+            rgba(200, 210, 220, 0.5) 25%,
             rgba(200, 210, 220, 0.5) 45%,
             rgba(100, 100, 100, 0.75) 65%,
             rgba(75, 75, 75, 0.825) 85%,
