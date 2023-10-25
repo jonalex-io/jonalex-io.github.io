@@ -342,10 +342,14 @@ footer .copyright {
     position: absolute;
     -webkit-animation-name: cycle;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 8s;
+    -webkit-animation-duration: 12s;
     animation-name: cycle;
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 12s;
+}
+
+.about p .slideshow-box img #f3 {
+    height: auto;
 }
 
 
@@ -357,15 +361,11 @@ footer .copyright {
         opacity: 0;
     }
 
-    20% {
-        opacity: 1;
-    }
-
     33% {
         opacity: 1;
     }
 
-    66% {
+    55% {
         opacity: 0;
     }
 
@@ -379,15 +379,11 @@ footer .copyright {
         opacity: 0;
     }
 
-    20% {
-        opacity: 1;
-    }
-
     33% {
         opacity: 1;
     }
 
-    66% {
+    55% {
         opacity: 0;
     }
 
@@ -404,6 +400,11 @@ footer .copyright {
 #f2 {
     -webkit-animation-delay: -4s;
     animation-delay: -4s;
+}
+
+#f3 {
+    -webkit-animation-delay: -8s;
+    animation-delay: -8s;
 }
 
 /* SCORES */
