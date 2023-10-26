@@ -4,6 +4,7 @@
     --main-white: #f0f0f0;
     --main-gray: rgb(77, 77, 77);
     --darker-gray: rgb(60, 60, 60);
+    --darkest-gray: rgb(30, 30, 30);
 
     /* title */
     --fs-600: 2rem;
@@ -326,7 +327,8 @@ footer .copyright {
 
 .about p {
     text-align: left;
-    color: var(--darker-gray);
+    -webkit-text-fill-color: var(--darkest-gray);
+    color: var(--darkest-gray);
 }
 
 .about p .slideshow-box {
@@ -435,6 +437,11 @@ footer .copyright {
     font-size: var(--fs-300);
     text-align: left;
     width: 100%;
+}
+
+.scores .content p {
+    -webkit-text-fill-color: var(--darkest-gray);
+    color: var(--darkest-gray);
 }
 
 .scores .content p,
