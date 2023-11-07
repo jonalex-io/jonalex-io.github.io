@@ -243,20 +243,10 @@ footer .copyright {
     margin: 37.5px auto;
     border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
-    /* background-image: url(./assets/背景/mountains-bottom.jpg); */
     background-image: url(./assets/背景/mountains-bottom.jpg);
-    background-position: bottom;
-    /* background-size: 100% auto; */
-    /* background-image: linear-gradient(180deg,
-            rgba(200, 210, 220, 0.67) 25%,
-            rgba(200, 210, 220, 0.5) 45%,
-            rgba(100, 100, 100, 0.75) 65%,
-            rgba(75, 75, 75, 0.825) 85%,
-            rgba(50, 50, 50, 1.000) 100%),
-        url(./assets/背景/陽明山公園.jpeg); */
-    /* background-position: top; */
     background-size: cover;
-    /* background-size: 175%; */
+    background-position: bottom;
+    background-position: 0% 99%;
 }
 
 .welcome i {
