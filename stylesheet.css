@@ -67,8 +67,8 @@ body {
             rgba(100, 100, 100, 0.75) 65%,
             rgba(75, 75, 75, 0.825) 85%,
             rgba(50, 50, 50, 1) 100%),
-        /* url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33-模糊糊.png); */
-        url(./assets/背景/陽明山公園-模糊糊.png);
+        url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33-模模糊糊5px.png);
+    /* url(./assets/背景/陽明山公園-模糊糊.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -244,10 +244,7 @@ footer .copyright {
     border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     /* background-image: url(./assets/背景/mountains-bottom.jpg); */
-    background-image: linear-gradient(180deg,
-            rgba(255, 222, 173, 0.15) 0%,
-            rgba(255, 222, 173, 0.15) 100%),
-        url(./assets/背景/mountains-bottom.jpg);
+    background-image: url(./assets/背景/mountains-bottom.jpg);
     background-position: bottom;
     /* background-size: 100% auto; */
     /* background-image: linear-gradient(180deg,
@@ -333,11 +330,11 @@ footer .copyright {
     border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
-    /* background-image: url(./assets/背景/mountains-bottom-被裁切.jpg); */
-    background-image: linear-gradient(180deg,
+    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
+    /* background-image: linear-gradient(180deg,
             rgba(255, 222, 173, 0.15) 0%,
             rgba(255, 222, 173, 0.15) 100%),
-        url(./assets/背景/mountains-bottom-被裁切.jpg);
+        url(./assets/背景/mountains-bottom-被裁切.jpg); */
     background-repeat: repeat-y;
     background-size: 100% auto;
 }
@@ -443,11 +440,11 @@ footer .copyright {
     border-radius: 40px;
     box-shadow: 0px 0px 33px #333333;
     background: #dddddd;
-    /* background-image: url(./assets/背景/mountains-bottom-被裁切.jpg); */
-    background-image: linear-gradient(180deg,
+    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
+    /* background-image: linear-gradient(180deg,
             rgba(255, 222, 173, 0.15) 0%,
             rgba(255, 222, 173, 0.15) 100%),
-        url(./assets/背景/mountains-bottom-被裁切.jpg);
+        url(./assets/背景/mountains-bottom-被裁切.jpg); */
     background-repeat: repeat-y;
     background-size: 100% auto;
     font-family: courier, monospace;
