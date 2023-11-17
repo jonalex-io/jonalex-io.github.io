@@ -484,6 +484,10 @@ footer .copyright {
     height: 2rem;
 }
 
+.scores #bold {
+    font-weight: bold;
+}
+
 /* COLLAPSIBLE */
 .collapsible {
     background-color: #777;
