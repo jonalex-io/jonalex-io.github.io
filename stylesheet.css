@@ -267,9 +267,9 @@ footer .copyright {
 /* .welcome  */
 .headshot img {
     /* POSITIONING */
-    max-width: 15rem;
+    max-width: 20rem;
     display: flex;
-    margin: 0rem auto 0 auto;
+    margin: 1rem auto 1rem auto;
     /* STYLING */
     border-radius: 1.75rem;
     /* border: solid black 0.25rem; */
@@ -667,6 +667,12 @@ footer .copyright {
 
 footer .copyright #version {
     color: #777;
+}
+
+footer .contact-text p {
+    color: white;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
 }
 
 #logo {
