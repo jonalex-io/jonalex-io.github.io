@@ -269,11 +269,11 @@ footer .copyright {
     /* POSITIONING */
     max-width: 15rem;
     display: flex;
-    margin: 2.5rem auto 0 auto;
+    margin: 0rem auto 0 auto;
     /* STYLING */
     border-radius: 1.75rem;
     /* border: solid black 0.25rem; */
-    opacity: 90%;
+    opacity: 85%;
 }
 
 .welcome .hero .title #zh-spacing {
@@ -642,6 +642,7 @@ footer .other-links-container {
     flex-wrap: wrap;
     /* display: grid; */
     /* grid-template-columns: repeat(6, 1fr); */
+    width: 75%;
 }
 
 footer .other-links-container .other-links-btn {
