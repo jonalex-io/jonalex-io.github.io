@@ -264,6 +264,18 @@ footer .copyright {
     min-width: 60%;
 }
 
+/* .welcome  */
+.headshot img {
+    /* POSITIONING */
+    max-width: 15rem;
+    display: flex;
+    margin: 2.5rem auto 0 auto;
+    /* STYLING */
+    border-radius: 1.75rem;
+    /* border: solid black 0.25rem; */
+    opacity: 90%;
+}
+
 .welcome .hero .title #zh-spacing {
     margin-top: 8px;
 }
@@ -662,6 +674,8 @@ footer .copyright #version {
     bottom: 1rem;
     left: 1rem;
     opacity: 33%;
+    height: 2.25rem;
+    /* height: 10rem; */
 }
 
 /* *****RESPONSIVE-DESIGN***** */
