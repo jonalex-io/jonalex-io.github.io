@@ -105,12 +105,11 @@ a {
 
 button {
     font-family: courier, monospace;
-    ;
     font-size: var(--fs-400);
 }
 
 button a {
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
 }
 
 img {
@@ -284,7 +283,7 @@ footer .copyright {
     display: block;
     margin: 2.5rem auto;
     color: black;
-    width: 90%;
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     line-height: 2.5;
     border-radius: 25px;
@@ -312,7 +311,7 @@ footer .copyright {
 }
 
 .welcome .hero .title img {
-    max-width: 90%;
+    max-width: 80%;
     filter: opacity(70%);
     margin-bottom: 0;
 }
