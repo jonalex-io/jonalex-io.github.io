@@ -250,6 +250,7 @@ footer .copyright {
     background-size: cover;
     background-position: bottom;
     background-position: 0% 99%;
+    background-color: black;
 }
 
 .welcome i {
@@ -259,27 +260,29 @@ footer .copyright {
     padding: 0;
 }
 
+.welcome .hero #hero-headshot img {
+    max-width: 5rem;
+    border-radius: 75%;
+    opacity: 85%;
+    border: solid black 1.5px;
+    box-shadow: 0px 0px 7.5px #333333;
+}
+
 .welcome .hero {
     max-height: 100%;
     max-width: 30rem;
     min-width: 60%;
 }
 
-/* .welcome  */
-.headshot img {
-    /* POSITIONING */
-    max-width: 20rem;
-    display: flex;
-    margin: 1rem auto 1rem auto;
-    /* STYLING */
-    border-radius: 1.75rem;
-    /* border: solid black 0.25rem; */
-    opacity: 85%;
-}
-
 .welcome .hero .title #zh-spacing {
     margin-top: 8px;
 }
+
+.welcome .hero .title img {
+    /* margin-top: -0.75rem; */
+}
+
+
 
 .welcome .hero .hero-links-container button {
     display: block;
@@ -295,7 +298,7 @@ footer .copyright {
 }
 
 .welcome .hero .hero-links-container button:nth-child(1) {
-    margin-top: 1.25rem;
+    margin-top: 0rem;
 }
 
 .welcome .hero .hero-links-container button a {
@@ -315,7 +318,7 @@ footer .copyright {
 .welcome .hero .title img {
     max-width: 80%;
     filter: opacity(70%);
-    margin-bottom: 0;
+    margin-top: -0.25rem;
 }
 
 /* ABOUT */
@@ -676,6 +679,17 @@ footer .contact-text p {
     letter-spacing: 2rem;
     text-indent: 2rem;
     margin-top: 1.75rem;
+}
+
+footer .footer-headshot img {
+    /* POSITIONING */
+    max-width: 20rem;
+    display: flex;
+    margin: 1rem auto 1rem auto;
+    /* STYLING */
+    border-radius: 1.75rem;
+    /* border: solid black 0.25rem; */
+    opacity: 85%;
 }
 
 #logo {
