@@ -329,10 +329,6 @@ footer .copyright {
     text-wrap: nowrap;
 }
 
-.welcome .hero .event-info #event-type:first-of-type {
-    line-height: 0.75rem;
-}
-
 .welcome .hero .event-info hr:first-of-type {
     margin-bottom: 0.5rem;
 }
@@ -345,7 +341,7 @@ footer .copyright {
     margin: -1rem auto 1rem auto;
 }
 
-#event-info {
+#event-info-list {
     list-style-type: disc;
     text-align: left;
     margin: auto 1rem auto 1rem;
@@ -357,7 +353,7 @@ footer .copyright {
 
 #event-button a {
     text-wrap: nowrap;
-    font-size: var(--fs-350)
+    font-size: var(--fs-350);
 }
 
 .event-welcome .title {
