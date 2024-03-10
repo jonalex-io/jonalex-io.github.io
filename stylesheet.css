@@ -752,6 +752,10 @@ footer .footer-headshot img {
     opacity: 85%;
 }
 
+footer #event-poster img {
+    opacity: 100%;
+}
+
 #logo {
     position: fixed;
     height: 2.25rem;
