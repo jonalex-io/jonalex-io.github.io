@@ -326,6 +326,7 @@ footer .copyright {
 
 .welcome .hero .event-info p {
     font-weight: 600;
+    text-wrap: nowrap;
 }
 
 .welcome .hero .event-info #event-type:first-of-type {
@@ -361,11 +362,6 @@ footer .copyright {
 
 .event-welcome .title {
     /* margin-top: 2.5rem; */
-}
-
-.event-info #event-title {
-    text-wrap: nowrap;
-
 }
 
 .event-welcome {
