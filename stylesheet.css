@@ -330,6 +330,7 @@ footer .copyright {
 }
 
 .welcome .hero .event-info #event-title {
+    text-wrap: nowrap;
     text-overflow: ellipsis;
     white-space: nowrap;
     /* This helps prevent any extra spaces from causing wrapping */
