@@ -282,8 +282,6 @@ footer .copyright {
     /* margin-top: -0.75rem; */
 }
 
-
-
 .welcome .hero .hero-links-container button {
     display: block;
     margin: 2.5rem auto;
@@ -319,6 +317,15 @@ footer .copyright {
     max-width: 80%;
     filter: opacity(70%);
     margin-top: -0.25rem;
+}
+
+/* EVENT */
+.welcome .hero .event-info hr:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+.welcome .hero #event-title img {
+    border: solid red;
 }
 
 /* ABOUT */
