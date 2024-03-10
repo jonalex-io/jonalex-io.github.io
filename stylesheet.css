@@ -356,6 +356,7 @@ footer .copyright {
 
 #event-button a {
     text-wrap: nowrap;
+    font-size: var(--fs-350)
 }
 
 .event-welcome .title {
