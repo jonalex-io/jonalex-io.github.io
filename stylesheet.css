@@ -363,7 +363,7 @@ footer .copyright {
     /* margin-top: 2.5rem; */
 }
 
-#event-title {
+.event-info #event-title {
     text-wrap: nowrap;
 
 }
