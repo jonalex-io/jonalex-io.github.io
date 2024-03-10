@@ -9,8 +9,6 @@ DTSTART:20240324T130000Z  # Sunday, March 24th, 2024, 1:00 pm ( Coordinated Univ
 DTEND:20240324T143000Z    # Sunday, March 24th, 2024, 2:30 pm ( Coordinated Universal Time)
 LOCATION:University of Lethbridge Recital Hall (W570), 4401 University Dr W, Lethbridge, AB T1K 6T5, Canada
 
-TZID:America/Edmonton  
-
 BEGIN:VALARM
 TRIGGER:-P1D  # 1 day before the event
 DESCRIPTION:Reminder
