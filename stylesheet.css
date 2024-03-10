@@ -350,6 +350,10 @@ footer .copyright {
     margin: auto 1rem auto 1rem;
 }
 
+#event-button {
+    width: 100%;
+}
+
 /* ABOUT */
 .about {
     position: relative;
