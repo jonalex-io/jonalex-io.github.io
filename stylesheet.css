@@ -354,6 +354,14 @@ footer .copyright {
     width: 100%;
 }
 
+#event-button a {
+    text-wrap: nowrap;
+}
+
+.event-welcome .title {
+    margin-top: 2.5rem;
+}
+
 /* ABOUT */
 .about {
     position: relative;
