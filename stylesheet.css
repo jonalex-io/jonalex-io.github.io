@@ -324,8 +324,16 @@ footer .copyright {
     margin-bottom: 2.5rem;
 }
 
-.welcome .hero #event-title img {
-    border: solid red;
+.welcome .hero .event-info p {
+    font-weight: 600;
+}
+
+.welcome .hero .event-info p:first-of-type {
+    line-height: 0.75rem;
+}
+
+#event-poster {
+    margin: -1rem auto 1rem auto;
 }
 
 /* ABOUT */
