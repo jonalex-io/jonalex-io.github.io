@@ -344,6 +344,12 @@ footer .copyright {
     margin: -1rem auto 1rem auto;
 }
 
+#event-info {
+    list-style-type: disc;
+    text-align: left;
+    margin: auto 1rem auto 1rem;
+}
+
 /* ABOUT */
 .about {
     position: relative;
