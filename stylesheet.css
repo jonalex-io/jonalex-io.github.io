@@ -359,7 +359,12 @@ footer .copyright {
 }
 
 .event-welcome .title {
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
+}
+
+.event-welcome {
+    padding-top: 5rem;
+    height: auto;
 }
 
 /* ABOUT */
