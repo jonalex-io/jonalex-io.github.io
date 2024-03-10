@@ -328,8 +328,16 @@ footer .copyright {
     font-weight: 600;
 }
 
-.welcome .hero .event-info p:first-of-type {
+.welcome .hero .event-info #event-type:first-of-type {
     line-height: 0.75rem;
+}
+
+.welcome .hero .event-info hr:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.welcome .hero .event-info hr:last-of-type {
+    margin-top: 0.5rem;
 }
 
 #event-poster {
