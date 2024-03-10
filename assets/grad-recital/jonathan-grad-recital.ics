@@ -19,11 +19,16 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTAMP:20240310T032051Z
 UID:1710040685167-1170588
-DTSTART;TZID=America/Denver:20240324T130000
-DTEND;TZID=America/Denver:20240324T143000
+DTSTART:20240324T130000Z
+DTEND:20240324T143000Z
 SUMMARY:Jonathan Alexander - Composition Graduation Recital
 DESCRIPTION:Jonathan Alexander's Composition Graduation Recital\; Sunday\, March 24th\, 2024\, 1:00 pm - 2:30 pm\; University of Lethbridge Recital Hall (W570)\; Free Admission\; Doors close at 1 pm\, please arrive early\; Parking available at Lot G\, H\, S\, N\, etc.
 LOCATION:University of Lethbridge Recital Hall (W570)\, 4401 University Dr W\, Lethbridge\, AB T1K 6T5\, Canada
 URL:https://jonalex.io/grad-recital
+BEGIN:VALARM
+TRIGGER:-PT24H   # 24 hours before the event
+DESCRIPTION:Reminder
+ACTION:DISPLAY
+END:VALARM
 END:VEVENT
 END:VCALENDAR
