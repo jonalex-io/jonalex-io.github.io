@@ -336,6 +336,7 @@ footer .copyright {
     /* This helps prevent any extra spaces from causing wrapping */
     overflow: hidden;
     /* This hides any text that overflows the element width */
+    font-weight: bold;
 
 }
 
