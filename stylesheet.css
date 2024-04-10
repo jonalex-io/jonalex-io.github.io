@@ -371,6 +371,17 @@ footer .copyright {
     margin-left: 2rem;
 }
 
+.music {
+    height: auto;
+    padding: 2.5rem 0 1rem 0;
+}
+
+.music iframe {}
+
+.music .hero {
+    /* min-width: 100%; */
+}
+
 /* ABOUT */
 .about {
     position: relative;
