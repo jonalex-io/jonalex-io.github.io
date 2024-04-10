@@ -379,7 +379,7 @@ footer .copyright {
 }
 
 .music .hero {
-    width: 100%;
+    width: 100% !important;
 }
 
 /* ABOUT */
