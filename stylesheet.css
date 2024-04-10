@@ -257,10 +257,11 @@ footer .copyright {
     box-shadow: 0px 0px 7.5px #333333;
 }
 
-.welcome .hero {
+.welcome .hero div {
     max-height: 100%;
     max-width: 30rem;
     min-width: 60%;
+    margin: 0 auto 0 auto;
 }
 
 .welcome .hero .title #zh-spacing {
@@ -371,15 +372,14 @@ footer .copyright {
     margin-left: 2rem;
 }
 
+/* MUSIC */
 .music {
     height: auto;
-    padding: 2.5rem 0 1rem 0;
+    padding: 2.5rem 0 2.5rem 0;
 }
 
-.music iframe {}
-
 .music .hero {
-    /* min-width: 100%; */
+    width: 100%;
 }
 
 /* ABOUT */
