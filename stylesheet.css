@@ -55,7 +55,6 @@ body {
             rgba(75, 75, 87.5, 0.825) 85%,
             rgba(50, 50, 50, 1) 100%),
         url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
-    background-image: ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,9 +267,9 @@ footer .copyright {
     margin-top: 8px;
 }
 
-.welcome .hero .title img {
-    /* margin-top: -0.75rem; */
-}
+/* .welcome .hero .title img {
+    margin-top: -0.75rem;
+} */
 
 .welcome .hero .hero-links-container button {
     display: block;
@@ -357,9 +356,9 @@ footer .copyright {
     font-size: var(--fs-350);
 }
 
-.event-welcome .title {
-    /* margin-top: 2.5rem; */
-}
+/* .event-welcome .title {
+    margin-top: 2.5rem;
+} */
 
 .event-welcome {
     padding-top: 5rem;
