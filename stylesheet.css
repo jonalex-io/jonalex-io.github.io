@@ -383,7 +383,7 @@ footer .copyright {
 
 .music .hero p {
     position: absolute;
-    top: 50%;
+    top: 17.5rem;
     z-index: 0;
 }
 
@@ -445,6 +445,11 @@ footer .copyright {
 
 .about p .slideshow-box img #f3 {
     height: auto;
+}
+
+.about p a {
+    color: var(--darkest-gray);
+    font-size: var(--fs-300);
 }
 
 
