@@ -381,6 +381,17 @@ footer .copyright {
     width: 100% !important;
 }
 
+.music .hero p {
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+
+.music .hero iframe {
+    position: relative;
+    z-index: 1;
+}
+
 /* ABOUT */
 .about {
     position: relative;
