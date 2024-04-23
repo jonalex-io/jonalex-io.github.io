@@ -392,6 +392,10 @@ footer .copyright {
     z-index: 1;
 }
 
+.music iframe {
+    /* opacity: 75%; */
+}
+
 /* ABOUT */
 .about {
     position: relative;
