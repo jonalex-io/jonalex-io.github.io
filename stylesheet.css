@@ -557,9 +557,12 @@ footer .copyright {
     color: var(--darkest-gray);
 }
 
-.scores .content p,
-.scores .content a {
+.scores .content p {
     padding: 1rem
+}
+
+.scores .content a {
+    margin-left: 1rem;
 }
 
 .scores iframe {
@@ -589,6 +592,15 @@ footer .copyright {
 
 .scores #bold {
     font-weight: bold;
+}
+
+.scores #audio-pending:hover {
+    cursor: not-allowed;
+}
+
+.scores a {
+    border: solid red;
+
 }
 
 /* COLLAPSIBLE */
