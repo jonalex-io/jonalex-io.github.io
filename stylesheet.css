@@ -371,6 +371,11 @@ footer .copyright {
     margin-left: 2rem;
 }
 
+.event-welcome iframe {
+    min-width: 30rem;
+    height: 16.8750000001rem;
+}
+
 /* MUSIC */
 .music {
     height: auto;
