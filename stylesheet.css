@@ -372,7 +372,8 @@ footer .copyright {
 }
 
 .event-welcome iframe {
-    min-width: 30rem;
+    /* min-width: 30rem; */
+    min-width: 100%;
     height: 16.8750000001rem;
     margin-bottom: 2.5rem;
 }
