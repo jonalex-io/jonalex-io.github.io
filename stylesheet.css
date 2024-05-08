@@ -598,10 +598,7 @@ footer .copyright {
     cursor: not-allowed;
 }
 
-.scores a {
-    border: solid red;
-
-}
+/* .scores a {} */
 
 /* COLLAPSIBLE */
 .collapsible {
@@ -711,7 +708,7 @@ footer .copyright {
 }
 
 .posters p {
-    border: solid red;
+    /* border: solid red; */
     position: absolute;
     z-index: 1;
     bottom: -100px;
