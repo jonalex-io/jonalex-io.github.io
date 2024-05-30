@@ -236,8 +236,8 @@ footer .copyright {
     background-position: bottom;
     background-position: 0% 99%;
     background-image: linear-gradient(180deg,
-            rgba(175, 175, 225, 0.3) 0%,
-            rgba(50, 50, 100, 0.3) 100%),
+            rgba(175, 175, 225, 0.4) 0%,
+            rgba(50, 50, 100, 0.4) 100%),
         url(./assets/背景/mountains-bottom.jpg);
 }
 
