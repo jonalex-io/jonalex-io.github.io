@@ -305,9 +305,9 @@ footer .copyright {
 }
 
 .welcome .hero .title img {
-    max-width: 80%;
+    max-width: 70%;
     filter: opacity(70%);
-    margin-top: -0.25rem;
+    margin: 0.75rem;
 }
 
 /* EVENT */
