@@ -742,7 +742,8 @@ footer .other-links-container {
     flex-wrap: wrap;
     /* display: grid; */
     /* grid-template-columns: repeat(6, 1fr); */
-    width: 90%;
+    /* width: 80%; */
+    max-width: 20rem;
     /* border: solid red; */
 }
 
@@ -750,9 +751,17 @@ footer .other-links-container .other-links-btn {
     margin: 5px 1rem;
 }
 
+footer .other-links-container .other-links-btn:first-child {
+    margin-left: 0;
+}
+
+footer .other-links-container .other-links-btn:last-child {
+    margin-right: 0;
+}
+
 footer .other-links-container .other-links-btn i {
     display: block;
-    font-size: var(--fs-500);
+    font-size: 1rem;
     transition: all 0.5s ease-out;
 }
 
