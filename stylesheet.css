@@ -77,6 +77,8 @@ p {
     font-size: var(--fs-300);
     color: var(--main-gray);
     font-weight: 400;
+    /* -webkit-font-smoothing: antialiased; */
+    -webkit-text-stroke: 0.35px;
 }
 
 ul {
