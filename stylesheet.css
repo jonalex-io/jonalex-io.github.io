@@ -156,11 +156,11 @@ img {
 }
 
 /* ***** BORDER TESTING ***** */
-/* .welcome,
-.welcome .hero,
-.welcome .title,
-.welcome .hero .hero-links-container,
-.welcome .hero .hero-links-container button,
+/* .card,
+.card .hero,
+.card .title,
+.card .hero .hero-links-container,
+.card .hero .hero-links-container button,
 .about p,
 .about .slideshow-box,
 .scores,
@@ -184,7 +184,7 @@ footer .copyright {
 } */
 
 /* ***** SECTIONS ***** */
-/* WELCOME */
+/* card */
 
 /* NAV */
 .nav {
@@ -216,7 +216,7 @@ footer .copyright {
 }
 
 /* HERO */
-.welcome {
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -245,14 +245,14 @@ footer .copyright {
         url(./assets/背景/mountains-bottom.jpg);
 }
 
-.welcome i {
+.card i {
     color: rgba(0, 0, 0, 0.5);
     text-shadow: none;
     margin: 0;
     padding: 0;
 }
 
-.welcome .hero #hero-headshot img {
+.card .hero #hero-headshot img {
     max-width: 5rem;
     border-radius: 75%;
     opacity: 80%;
@@ -260,22 +260,22 @@ footer .copyright {
     box-shadow: 0px 0px 7.5px #333333;
 }
 
-.welcome .hero div {
+.card .hero div {
     max-height: 100%;
     max-width: 30rem;
     min-width: 60%;
     margin: 0 auto 0 auto;
 }
 
-.welcome .hero .title #zh-spacing {
+.card .hero .title #zh-spacing {
     margin-top: 8px;
 }
 
-/* .welcome .hero .title img {
+/* .card .hero .title img {
     margin-top: -0.75rem;
 } */
 
-.welcome .hero .hero-links-container button {
+.card .hero .hero-links-container button {
     display: block;
     margin: 2.5rem auto;
     color: black;
@@ -288,41 +288,41 @@ footer .copyright {
     transition: all 0.5s ease-out;
 }
 
-.welcome .hero .hero-links-container button:nth-child(1) {
+.card .hero .hero-links-container button:nth-child(1) {
     margin-top: 0rem;
 }
 
-.welcome .hero .hero-links-container button a {
+.card .hero .hero-links-container button a {
     display: block;
     transition: all 0.33s ease-out;
 }
 
-.welcome .hero .hero-links-container button:hover {
+.card .hero .hero-links-container button:hover {
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 0px 1px 9.99px #888888;
 }
 
-.welcome .hero .hero-links-container button a:hover {
+.card .hero .hero-links-container button a:hover {
     color: black;
 }
 
-.welcome .hero .title img {
+.card .hero .title img {
     max-width: 70%;
     filter: opacity(70%);
     margin: 0.75rem;
 }
 
 /* EVENT */
-.welcome .hero .event-info hr:last-of-type {
+.card .hero .event-info hr:last-of-type {
     margin-bottom: 2.5rem;
 }
 
-.welcome .hero .event-info p {
+.card .hero .event-info p {
     font-weight: 600;
     text-wrap: nowrap !important;
 }
 
-.welcome .hero .event-info #event-title {
+.card .hero .event-info #event-title {
     text-wrap: nowrap;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -333,11 +333,11 @@ footer .copyright {
 
 }
 
-.welcome .hero .event-info hr:first-of-type {
+.card .hero .event-info hr:first-of-type {
     margin-bottom: 0.5rem;
 }
 
-.welcome .hero .event-info hr:last-of-type {
+.card .hero .event-info hr:last-of-type {
     margin-top: 0.5rem;
 }
 
@@ -360,22 +360,22 @@ footer .copyright {
     font-size: var(--fs-350);
 }
 
-/* .event-welcome .title {
+/* .event-card .title {
     margin-top: 2.5rem;
 } */
 
-.event-welcome {
+.event-card {
     padding-top: 5rem;
     height: auto;
 }
 
-.event-welcome .event-info,
-.event-welcome .event-links {
+.event-card .event-info,
+.event-card .event-links {
     margin-right: 2rem;
     margin-left: 2rem;
 }
 
-.event-welcome iframe {
+.event-card iframe {
     /* min-width: 30rem; */
     min-width: 100%;
     height: 16.8750000001rem;
@@ -817,7 +817,7 @@ footer #event-poster img {
 /* hit side margin equal to top margin of hero card */
 @media (max-width: calc(40rem + 100px)) {
 
-    .welcome,
+    .card,
     .about,
     .scores,
     .posters,
@@ -826,7 +826,7 @@ footer #event-poster img {
         max-width: calc(100% - 50px);
     }
 
-    .welcome,
+    .card,
     .about,
     .scores {
         margin-top: 25px;
@@ -840,7 +840,7 @@ footer #event-poster img {
 /* Background Size */
 @media (min-height: 1130px) {
 
-    .welcome,
+    .card,
     .about,
     .scores {
         background-size: 100% 100%;
@@ -850,7 +850,7 @@ footer #event-poster img {
 /* Background Size */
 @media (max-width: 66.66vh) {
 
-    .welcome {
+    .card {
         background-size: 100% 100%;
     }
 }
