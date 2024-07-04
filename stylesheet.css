@@ -125,14 +125,14 @@ img {
 /* BUTTON HIGHLIGHT ANIMATION */
 /* https://ui-buttons.web.app/material-ripple */
 
-.btn-highlight {
+#btn-highlight {
     position: relative;
     -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     mask-image: radial-gradient(#000, #fff);
     overflow: hidden;
 }
 
-.btn-highlight:before {
+#btn-highlight:before {
     opacity: 0.2;
     border-radius: 50%;
     aspect-ratio: 1;
@@ -169,13 +169,13 @@ img {
 .nav ul,
 .nav ul li a,
 .nav-2,
-.posters,
-.posters img,
-footer,
-footer .other-links-container,
-footer .other-links-container a,
-footer .other-links-container i,
-footer .copyright {
+.credits-scroll,
+.credits-scroll img,
+.contact,
+.contact .socials-container,
+.contact .socials-container a,
+.contact .socials-container i,
+.copyright {
     border: solid red;
 } */
 
@@ -252,7 +252,7 @@ footer .copyright {
     padding: 0;
 }
 
-.card .hero #hero-headshot img {
+.card .hero #social-icon img {
     max-width: 5rem;
     border-radius: 75%;
     opacity: 80%;
@@ -652,38 +652,23 @@ footer .copyright {
 }
 
 /* POSTERS */
-.posters-divider {
-    margin: 0 auto 0 auto;
+
+.credits-divider {
+    margin: 0 auto 10px auto;
     max-width: 40rem;
 }
 
-.posters-divider p {
+.credits-divider p {
     color: #e8e8e8;
-    font-size: var(--fs-200);
     font-size: var(--fs-300);
-    /* margin: 7.5px 15px; */
-    margin-bottom: 10px;
     border-top: 1.5px dotted rgba(232, 232, 232, 0.75);
     border-left: 1.5px dotted rgba(232, 232, 232, 0.75);
     border-top-left-radius: 20px;
-    padding-top: 5px;
-    padding-left: 10px;
+    padding: 5px 0 0 10px;
     width: max-content;
 }
 
-/* .posters-divider hr {
-    border: 1px dotted #e8e8e8;
-    -webkit-mask-image: linear-gradient(to right,
-            transparent,
-            black 2.5% 97.5%,
-            transparent);
-    mask-image: linear-gradient(to right,
-            transparent,
-            black 2.5% 97.5%,
-            transparent);
-} */
-
-.posters {
+.credits-scroll {
     display: flex;
     height: 200px;
     margin: 0 auto 50px auto;
@@ -700,16 +685,16 @@ footer .copyright {
     overflow: hidden;
 }
 
-.posters img {
+.credits-scroll img {
     margin: 0rem 0.5rem;
     animation: slide 75s infinite linear;
 }
 
-.posters .square {
+.credits-scroll .square {
     border-radius: 25px;
 }
 
-.posters p {
+.credits-scroll p {
     /* border: solid red; */
     position: absolute;
     z-index: 1;
@@ -726,8 +711,8 @@ footer .copyright {
     }
 }
 
-/* FOOTER */
-footer {
+/* CONTACT */
+.contact {
     margin: 0 auto;
     max-width: 40rem;
     display: flex;
@@ -736,7 +721,7 @@ footer {
     text-align: center;
 }
 
-footer .other-links-container {
+.contact .socials-container {
     text-shadow: 0px 0px 5px #1f1f1f;
     text-shadow: 0px 0px 5px var(--main-gray);
     display: flex;
@@ -749,46 +734,46 @@ footer .other-links-container {
     /* border: solid red; */
 }
 
-footer .other-links-container .other-links-btn {
+.contact .socials-container .social-btn {
     margin: 5px 1rem;
 }
 
-footer .other-links-container .other-links-btn:first-child {
+.contact .socials-container .social-btn:first-child {
     margin-left: 0;
 }
 
-footer .other-links-container .other-links-btn:last-child {
+.contact .socials-container .social-btn:last-child {
     margin-right: 0;
 }
 
-footer .other-links-container .other-links-btn i {
+.contact .socials-container .social-btn i {
     display: block;
     font-size: 1rem;
     transition: all 0.5s ease-out;
 }
 
-footer .other-links-container .other-links-btn i:hover {
+.contact .socials-container .social-btn i:hover {
     scale: 125%;
 }
 
-footer .copyright {
+.copyright {
     margin: 2rem 0;
     color: white;
     font-size: var(--fs-200);
 }
 
-footer .copyright #version {
+.copyright #version {
     color: #777;
 }
 
-footer .contact-text p {
+.contact .contact-text p {
     color: white;
     letter-spacing: 2rem;
     text-indent: 2rem;
     margin-top: 1.75rem;
 }
 
-footer .footer-headshot img {
+.contact .contact-headshot img {
     /* POSITIONING */
     max-width: 20rem;
     display: flex;
@@ -799,8 +784,13 @@ footer .footer-headshot img {
     opacity: 85%;
 }
 
-footer #event-poster img {
+.contact #event-poster img {
     opacity: 100%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
 }
 
 #logo {
@@ -810,7 +800,6 @@ footer #event-poster img {
     left: 1rem;
     opacity: 33%;
     height: 2.25rem;
-    /* height: 10rem; */
 }
 
 /* *****RESPONSIVE-DESIGN***** */
@@ -820,9 +809,9 @@ footer #event-poster img {
     .card,
     .about,
     .scores,
-    .posters,
-    .posters-divider,
-    footer {
+    .credits,
+    .credits-divider,
+    .contact {
         max-width: calc(100% - 50px);
     }
 
@@ -832,7 +821,7 @@ footer #event-poster img {
         margin-top: 25px;
     }
 
-    .posters {
+    .credits-scroll {
         margin-bottom: 25px;
     }
 }
