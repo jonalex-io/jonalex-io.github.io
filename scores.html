@@ -3,22 +3,21 @@
 <html lang="en">
 
 <head>
-    <title>Scores | Jonathan Alexander | Composer, Producer, Musician</title>
+    <title>Scores | Jonathan Alexander | Music & Sound, Audio Design</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
-    <link rel=" stylesheet" href="collapsible.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel=" stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
     <link rel="icon" href="./assets/頭拍/頭拍-00-compressed.jpg">
 </head>
 
-<body>
-    <!-- SCORES -->
-    <section class="scores fade-in">
+<body class="fade-in">
+    <!-- CARD -->
+    <section id="scores">
         <!-- NAV -->
-        <nav id="navbar" class="nav">
+        <nav class="nav">
             <ul class="nav-list">
                 <li>
                     <a href="./index.html">◂<!--❮-->Home</a>
@@ -29,11 +28,13 @@
             </ul>
         </nav>
 
-        <!-- TOGGLES -->
-        <!-- Beastars Classical -->
+        <!-- TODO -->
+        <!-- HERO (SCORE_TOGGLES) -->
+        <!-- BEASTARS -classical- (transcription) -->
         <button class="collapsible">(2024-07-01) BEASTARS "Classical" (transcription)</button>
         <div class="content score-container">
-            <p>A transcription of one of the main themes from the Netflix animated series BEASTARS. Arranged for string
+            <p>A transcription of one of the main themes from the Netflix animated series BEASTARS. Arranged for
+                string
                 quartet. Performed, recorded, and mixed by yours truly ;).</p>
             <p id="bold">BEASTARS -classical- (transcription):</p>
             <audio type="audio/mpeg" controls preload="none" src=""></audio>
@@ -110,7 +111,6 @@
             <!-- <iframe src="./assets/樂譜/01.01-String-Trio.pdf" frameborder="0"></iframe> -->
         </div>
 
-        </div>
         <!-- WIND QUINTET -->
         <button class="collapsible">(2023-11-17) Wind Quintet</button>
         <div class="content score-container">
@@ -155,6 +155,7 @@
             </div>
 
         </div>
+
         <!-- BRASS QUINTET -->
         <button class="collapsible">(2023-05-05) Brass Quintet</button>
         <div class="content">
@@ -288,6 +289,7 @@
                 </p>
             </div>
         </div>
+
         <!-- BOB-OMB BATTLEFIELD -->
         <button class="collapsible">(2021-07-07) Bob-omb Battlefield (jazz arrangement)</button>
         <div class="content score-container">
@@ -303,31 +305,19 @@
             <a href="./assets/樂譜/*bobomb-full.pdf" target="_blank"><u>PDF link</u></a><br><br>
             <!-- <iframe src="./assets/樂譜/*bobomb-full.pdf" frameborder="0"></iframe> -->
         </div>
-        <!-- SCRIPT -->
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "100%";
-                    }
-                });
-            }
-        </script>
+        <!-- SCRIPT -->
         <div id="spacer"></div>
-        <nav id="navbar" class="nav-2">
+
+        <!-- BOTTOM_NAV -->
+        <nav id="bottom-nav">
             <ul class="nav-list">
                 <li>
-                    <a href="./index.html">◂<!--❮-->Home </a>
+                    <a href="./index.html">◂Home </a>
                 </li>
             </ul>
         </nav>
+
     </section>
 
     <!-- CONTACT -->

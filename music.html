@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Jonathan Alexander | Composer, Producer, Musician</title>
+    <title>Music | Jonathan Alexander | Music & Sound, Audio Design</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
     <link rel=" stylesheet" href="stylesheet.css">
@@ -13,11 +13,11 @@
     <link rel="icon" href="./assets/頭拍/頭拍-00-compressed.jpg">
 </head>
 
-<body>
-    <!-- MUSIC -->
-    <section class="card music fade-in">
+<body class="fade-in">
+    <!-- CARD -->
+    <section class="card" id="music-card">
         <!-- NAV -->
-        <nav id="navbar" class="nav">
+        <nav class="nav">
             <ul class="nav-list">
                 <li>
                     <a href="./index.html">◂Home</a>
@@ -28,72 +28,36 @@
             </ul>
         </nav>
 
-        <!-- HERO = TITLE + LINKS -->
+        <!-- HERO (TITLE + AUDIO_PLAYER) -->
         <div class="hero">
 
-            <!-- TITLE -->
+            <!-- SOCIAL_ICON -->
             <div id="social-icon">
                 <img src="./assets/頭拍/頭拍-00-compressed.jpg" alt="poika of Jonathan Alexander">
             </div>
+            <!-- TITLE -->
             <div class="title">
-                <img src="./assets/hero-title/web-hero-title.png" alt="">
+                <img src="./assets/hero-title/web-hero-title-music-sound-audio-design.png"
+                    alt="Jonathan Alexander | Music & Sound, Audio Design | 蔣智海">
             </div>
-            <a href="https://soundcloud.com/jonalex_io/sets/reel" target="_blank">
-                <p><i>&nbsp<u>Soundcloud Player (link at page bottom if not loading (5s)...)</u></i></p>
-            </a>
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" fetchpriority="high"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1507621276&color=%23a848d8&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false&show_artwork=true"
-                alt="soundcloud visual embedded player"></iframe>
-            <!-- LINKS -->
-            <!-- <div class="hero-links-container">
-                <button type="button" class="btn">
-                    <a href="https://soundcloud.com/jonalex_io/sets/viff" target="_blank"
-                        class="link link-tile btn-highlight">
-                        music
-                    </a>
-                </button>
-                <button type="button" class="btn">
-                    <a href="./scores.html" target="" class="link link-tile">
-                        scores
-                    </a>
-                </button>
-                <button type="button" class="btn">
-                    <a href="./about.html" target="_self" class="link link-tile">
-                        about
-                    </a>
-                </button>
-            </div> -->
-            <!-- <footer>
-                <div class="other-links-container">
-                    <a href="https://www.instagram.com/jonalex.io/" target="_blank" class="btn other-links-btn">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@jonalex_io" target="_blank" class="btn other-links-btn">
-                        <i class="fab fa-youtube-square"></i>
-                    </a>
-                    <a href="https://twitter.com/jonalex_io" target="_blank" class="btn other-links-btn">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:inquiries@jonalex.io" class="btn other-links-btn">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/jonalex-io" target="_blank" class="btn other-links-btn">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://facebook.com/jonalex.io" target="_blank" class="btn other-links-btn">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </div>
-            </footer> -->
+            <!-- AUDIO_PLAYER -->
+            <div id="audio-player">
+                <a href="https://soundcloud.com/jonalex_io/sets/reel" target="_blank">
+                    <p><i>&nbsp<u>Soundcloud Player (link at page bottom if not loading (5s)...)</u></i></p>
+                </a>
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" fetchpriority="high"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1507621276&color=%23a848d8&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false&show_artwork=true"
+                    alt="soundcloud visual embedded player"></iframe>
+            </div>
         </div>
     </section>
 
     <!-- CREDITS -->
     <section>
-        <div class="credits-divider fade-in">
+        <div class="credits-divider">
             <p>credits & projects:</p>
         </div>
-        <div class="credits-scroll fade-in">
+        <div class="credits-scroll">
             <img class="square" src="./assets/credits/<100kb-or-compressed/edens-garden.jpeg"
                 alt="Eden's Garden (UBC GameDev - Year End Showcase Winner)">
             <img class="square" src="./assets/credits/<100kb-or-compressed/3VEREST-compressed.jpg"
@@ -113,7 +77,7 @@
                 alt="Westworld Scoreing Competition (Spitfire Audio)">
             <img class="square" src="./assets/credits/<100kb-or-compressed/discovery-competition.jpg"
                 alt="Discovery Competition (Orchestral Tools)">
-            <!-- 循環 -->
+            <!-- LOOP -->
             <img class="square" src="./assets/credits/<100kb-or-compressed/edens-garden.jpeg"
                 alt="Eden's Garden (UBC GameDev - Year End Showcase Winner)">
             <img class="square" src="./assets/credits/<100kb-or-compressed/3VEREST-compressed.jpg"
@@ -128,10 +92,6 @@
 
     <!-- CONTACT -->
     <section class="contact">
-        <!-- CONTACT_TEXT -->
-        <!-- <div class="contact-text">
-            <p>CONTACT</p>
-        </div> -->
         <!-- SOCIAL_LINKS -->
         <div class="socials-container">
             <a href="https://www.instagram.com/jonalex.io/" target="_blank" class="social-btn">
@@ -166,7 +126,6 @@
 
     <!-- SCRIPT -->
     <script src="./script.js"></script>
-
 </body>
 
 </html>
