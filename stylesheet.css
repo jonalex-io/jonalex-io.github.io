@@ -813,7 +813,7 @@ footer {
     .card,
     #about-card,
     #scores,
-    .credits,
+    .credits-scroll,
     .credits-divider,
     .contact {
         max-width: calc(100% - 50px);
