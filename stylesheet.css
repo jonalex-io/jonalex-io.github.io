@@ -594,14 +594,6 @@ img {
     margin-top: auto;
 }
 
-#scores #spacer {
-    height: 2rem;
-}
-
-#scores #bold {
-    font-weight: bold;
-}
-
 #scores #audio-pending:hover {
     cursor: not-allowed;
 }
@@ -649,10 +641,6 @@ img {
 
 .content .collapsible:first-of-type {
     margin-top: 1rem;
-}
-
-.content .score-container {
-    margin-left: 0.66rem;
 }
 
 /* POSTERS */
