@@ -1,5 +1,5 @@
 // SCORE_TOGGLES
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {

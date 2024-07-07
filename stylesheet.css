@@ -76,9 +76,6 @@ a {
 
 button {
     font-family: courier, monospace;
-}
-
-button a {
     font-size: var(--fs-400);
 }
 
@@ -531,7 +528,7 @@ img {
     font-family: courier, monospace;
 }
 
-#scores-card .collapsible,
+#scores-card .collapsible-button,
 #scores-card .content p {
     text-align: left;
     width: 100%;
@@ -574,9 +571,8 @@ img {
     cursor: not-allowed;
 }
 
-/* COLLAPSIBLE */
-.collapsible {
-    /* set font-size for collapsible title */
+/* COLLAPSIBLE_BUTTON */
+.collapsible-button {
     font-size: var(--fs-300);
     background-color: #777;
     color: white;
@@ -589,11 +585,11 @@ img {
 }
 
 .active,
-.collapsible:hover {
+.collapsible-button:hover {
     background-color: #555;
 }
 
-.collapsible:after {
+.collapsible-button:after {
     content: '\002B';
     color: white;
     font-weight: bold;
@@ -612,11 +608,11 @@ img {
     background-color: #f1f1f1;
 }
 
-.content .collapsible {
+.content .collapsible-button {
     margin-left: 0.66rem;
 }
 
-.content .collapsible:first-of-type {
+.content .collapsible-button:first-of-type {
     margin-top: 1rem;
 }
 
@@ -724,9 +720,9 @@ img {
 }
 
 .copyright {
+    font-size: var(--fs-200);
     margin: 2rem 0;
     color: white;
-    font-size: var(--fs-200);
 }
 
 .copyright #version {
@@ -793,7 +789,6 @@ footer {
     }
 
     html {
-        /* TODO: optimize to be global across all fonts */
         /* 16px to 14px */
         font-size: 87.5%;
     }
@@ -817,10 +812,7 @@ footer {
     }
 }
 
+/* TODO: font size need to change between tablet and phone sizes? */
 @media only screen and (max-width: 414px) {
-    :root {
-        /* Adjust your font-size variables to smaller values */
-        /* --fs-300: 0.875rem;
-        --fs-200: 0.625rem; */
-    }
+    :root {}
 }
