@@ -1,5 +1,5 @@
-/* ***** BASE-STYLES ***** */
-/* CUSTOM VARIABLES  */
+/* ***** BASE_STYLES ***** */
+/* CUSTOM_VARIABLES  */
 :root {
     --main-white: #f0f0f0;
     --main-gray: rgb(77, 77, 77);
@@ -22,7 +22,10 @@
     --fs-200: 0.75rem;
 }
 
-/* RESET BASE */
+/* RESET_BASE */
+/* *::before/after resets pseudo-elements */
+/* margin & padding to 0 removes default spacing which varies by browser */
+/* box-sizing inherit makes calculations more predictable */
 *,
 *::before,
 *::after {
@@ -31,12 +34,14 @@
     box-sizing: inherit;
 }
 
-/* RESET BOX/FONT-SIZE */
+/* RESET_BOX/FONT_SIZE */
+/* box-sizing: */
+/*   content-box default only includes width & height w/o padding & border */
+/*   border-box includes padding & border in total width/height */
 html {
     box-sizing: border-box;
     font-size: var(--fs-300);
     scroll-behavior: smooth;
-
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
@@ -816,6 +821,12 @@ footer {
     .credits-scroll {
         margin-bottom: 25px;
     }
+
+    html {
+        /* TODO: optimize to be global across all fonts */
+        /* 16px to 14px */
+        font-size: 87.5%;
+    }
 }
 
 /* Background Size */
@@ -839,11 +850,11 @@ footer {
 @media only screen and (max-width: 414px) {
     :root {
         /* Adjust your font-size variables to smaller values */
-        --fs-600: 1.7rem;
+        /* --fs-600: 1.7rem;
         --fs-500: 1.25rem;
         --fs-400: 1.125;
         --fs-350: 1rem;
         --fs-300: 0.875rem;
-        --fs-200: 0.625rem;
+        --fs-200: 0.625rem; */
     }
 }
