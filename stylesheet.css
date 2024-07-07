@@ -6,17 +6,9 @@
     --darker-gray: rgb(60, 60, 60);
     --darkest-gray: rgb(30, 30, 30);
 
-    /* title */
-    --fs-600: 2rem;
     /* button */
-    --fs-500: 1.5rem;
-    /* smaller button */
-    --fs-450: 1.375rem;
-    /* subtitle */
-    --fs-400: 1.25rem;
-    /* workaround */
-    --fs-350: 1.125rem;
-    /* normaltext */
+    --fs-400: 1.375rem;
+    /* text (16px) */
     --fs-300: 1rem;
     /* copyright */
     --fs-200: 0.75rem;
@@ -42,15 +34,14 @@ html {
     box-sizing: border-box;
     font-size: var(--fs-300);
     scroll-behavior: smooth;
+    text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    text-size-adjust: none;
 }
 
 /* BASE STYLES */
 body {
     font-family: Courier, monospace;
-    font-size: var(--fs-300);
     line-height: 1.5;
     color: var(--main-gray);
     background-image: linear-gradient(180deg,
@@ -66,20 +57,7 @@ body {
     background-attachment: fixed;
 }
 
-h1 {
-    text-align: center;
-    font-weight: 500;
-    font-size: var(--fs-600);
-    color: var(--main-gray);
-}
-
-h2 {
-    font-weight: 300;
-    font-size: var(--fs-350);
-}
-
 p {
-    font-size: var(--fs-300);
     color: var(--main-gray);
     font-weight: 400;
     /* -webkit-font-smoothing: antialiased; */
@@ -93,17 +71,15 @@ ul {
 a {
     text-decoration: none;
     color: var(--main-white);
-    font-size: var(--fs-400);
     font-weight: 400;
 }
 
 button {
     font-family: courier, monospace;
-    font-size: var(--fs-400);
 }
 
 button a {
-    font-size: var(--fs-450);
+    font-size: var(--fs-400);
 }
 
 img {
@@ -168,8 +144,8 @@ img {
 .card .hero .hero-links-container button,
 #about-card p,
 #about-card .slideshow-box,
-#scores,
-#scores button,
+#scores-card,
+#scores-card button,
 .nav,
 .nav ul,
 .nav ul li a,
@@ -207,7 +183,6 @@ img {
 .nav-list a {
     display: flex;
     color: var(--main-gray);
-    font-size: var(--fs-300);
     transition: all 0.33s ease-out;
 }
 
@@ -362,7 +337,6 @@ img {
 
 #event-button a {
     text-wrap: nowrap;
-    font-size: var(--fs-350);
 }
 
 /* .event-card .title {
@@ -473,7 +447,6 @@ img {
 
 #about-card p a {
     color: var(--darkest-gray);
-    font-size: var(--fs-300);
 }
 
 
@@ -532,7 +505,7 @@ img {
 }
 
 /* SCORES */
-#scores {
+#scores-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -558,53 +531,53 @@ img {
     font-family: courier, monospace;
 }
 
-#scores .collapsible,
-#scores .content p {
-    font-size: var(--fs-300);
+#scores-card .collapsible,
+#scores-card .content p {
     text-align: left;
     width: 100%;
 }
 
-#scores .content p {
+#scores-card .content p {
     -webkit-text-fill-color: var(--darkest-gray);
     color: var(--darkest-gray);
 }
 
-#scores .content p {
+#scores-card .content p {
     padding: 1rem
 }
 
-#scores .content a {
+#scores-card .content a {
     margin-left: 1rem;
 }
 
-#scores iframe {
+#scores-card iframe {
     width: 100%;
     height: 40rem;
     margin-top: 1rem;
 }
 
-#scores .content audio {
+#scores-card .content audio {
     width: 100%;
     padding: 0 1rem 0 1rem;
 }
 
-#scores .content a {
+#scores-card .content a {
     color: var(--main-gray);
     text-decoration: underline;
-    font-size: var(--fs-300);
 }
 
-#scores #bottom-nav {
+#scores-card #bottom-nav {
     margin-top: auto;
 }
 
-#scores #audio-pending:hover {
+#scores-card #audio-pending:hover {
     cursor: not-allowed;
 }
 
 /* COLLAPSIBLE */
 .collapsible {
+    /* set font-size for collapsible title */
+    font-size: var(--fs-300);
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -613,7 +586,6 @@ img {
     border: none;
     text-align: left;
     outline: none;
-    font-size: var(--fs-300);
 }
 
 .active,
@@ -657,7 +629,6 @@ img {
 
 .credits-divider p {
     color: #e8e8e8;
-    font-size: var(--fs-300);
     border-top: 1.5px dotted rgba(232, 232, 232, 0.75);
     border-left: 1.5px dotted rgba(232, 232, 232, 0.75);
     border-top-left-radius: 20px;
@@ -745,7 +716,6 @@ img {
 
 .contact .socials-container .social-btn i {
     display: block;
-    font-size: 1rem;
     transition: all 0.5s ease-out;
 }
 
@@ -805,7 +775,7 @@ footer {
 
     .card,
     #about-card,
-    #scores,
+    #scores-card,
     .credits-scroll,
     .credits-divider,
     .contact {
@@ -814,7 +784,7 @@ footer {
 
     .card,
     #about-card,
-    #scores {
+    #scores-card {
         margin-top: 25px;
     }
 
@@ -834,7 +804,7 @@ footer {
 
     .card,
     #about-card,
-    #scores {
+    #scores-card {
         background-size: 100% 100%;
     }
 }
@@ -850,11 +820,7 @@ footer {
 @media only screen and (max-width: 414px) {
     :root {
         /* Adjust your font-size variables to smaller values */
-        /* --fs-600: 1.7rem;
-        --fs-500: 1.25rem;
-        --fs-400: 1.125;
-        --fs-350: 1rem;
-        --fs-300: 0.875rem;
+        /* --fs-300: 0.875rem;
         --fs-200: 0.625rem; */
     }
 }
