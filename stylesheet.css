@@ -516,6 +516,7 @@ footer .logo {
     max-height: 0;
     overflow: hidden;
     background-color: rgba(241, 241, 241, 0.75);
+    /* padding for sub-content accordion indent */
     padding-left: 1rem;
 }
 
@@ -523,8 +524,7 @@ footer .logo {
     margin-bottom: 2.5rem;
 }
 
-#scores-card .content p,
-#scores-card .content a {
+#scores-card .content p {
     display: block;
     text-align: left;
     color: var(--darkest-gray);
@@ -533,15 +533,17 @@ footer .logo {
 }
 
 #scores-card .content a {
-    color: lightgray;
-    padding: 0;
+    display: block;
+    text-align: left;
+    color: var(--main-gray);
     text-decoration: underline;
-    width: fit-content;
+    padding: 0;
     margin: 0.33rem 0;
+    width: fit-content;
 }
 
 #scores-card .content a:last-of-type {
-    margin-bottom: 0.67rem;
+    margin-bottom: 0.75rem;
 }
 
 #scores-card .content audio {
