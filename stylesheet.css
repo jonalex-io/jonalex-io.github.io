@@ -412,6 +412,7 @@ footer .logo {
     color: var(--darkest-gray);
 }
 
+/* TODO:圖片白色ALPHA */
 #about-card #about-text .slideshow-box {
     width: 6rem;
     height: 6rem;
