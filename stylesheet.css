@@ -412,7 +412,6 @@ footer .logo {
     color: var(--darkest-gray);
 }
 
-/* TODO:圖片白色ALPHA */
 #about-card #about-text .slideshow-box {
     width: 6rem;
     height: 6rem;
@@ -574,6 +573,7 @@ footer .logo {
     content: "\2212";
 } */
 
+/* TODO:CONTINUE */
 /* EVENTS */
 .card .hero .event-info hr:last-of-type {
     margin-bottom: 2.5rem;
