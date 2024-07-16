@@ -13,7 +13,7 @@
     <link rel="icon" href="./assets/頭拍/頭拍-00-compressed.jpg">
 </head>
 
-<body class="fade-in">
+<body class="fade-in" id="music">
     <!-- CARD -->
     <section class="card" id="music-card">
         <!-- NAV -->
@@ -30,9 +30,8 @@
 
         <!-- HERO (TITLE + AUDIO_PLAYER) -->
         <div class="hero">
-
             <!-- SOCIAL_ICON -->
-            <div id="social-icon">
+            <div class="social-icon">
                 <img src="./assets/頭拍/頭拍-00-compressed.jpg" alt="poika of Jonathan Alexander">
             </div>
             <!-- TITLE -->
@@ -41,9 +40,9 @@
                     alt="Jonathan Alexander | Music & Sound, Audio Design | 蔣智海">
             </div>
             <!-- AUDIO_PLAYER -->
-            <div id="audio-player">
+            <div class="audio-player">
                 <a href="https://soundcloud.com/jonalex_io/sets/reel" target="_blank">
-                    <p><i>&nbsp<u>Soundcloud Player (link at page bottom if not loading (5s)...)</u></i></p>
+                    <p><i><u>Soundcloud Player (link at page bottom if not loading (5s)...)</u></i></p>
                 </a>
                 <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" fetchpriority="high"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1507621276&color=%23a848d8&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false&show_artwork=true"
@@ -58,6 +57,8 @@
             <p>credits & projects:</p>
         </div>
         <div class="credits-scroll">
+            <!-- !IMPORTANT! -->
+            <!-- 加新作品時更新@keyframes slide {} -->
             <img class="square" src="./assets/credits/<100kb-or-compressed/edens-garden.jpeg"
                 alt="Eden's Garden (UBC GameDev - Year End Showcase Winner)">
             <img class="square" src="./assets/credits/<100kb-or-compressed/3VEREST-compressed.jpg"
@@ -118,11 +119,13 @@
         </div>
     </section>
 
-    <!-- COPYRIGHT -->
-    <footer class="copyright">copyright jonalex.io</footer>
-
-    <!-- LOGO -->
-    <img src="./assets/頭拍/頭拍-00-compressed.jpg" id="logo" alt="jonalex.io logo">
+    <!-- FOOTER -->
+    <footer>
+        <!-- COPYRIGHT -->
+        <p class="copyright">copyright jonalex.io</p>
+        <!-- LOGO -->
+        <img class="logo" src="./assets/頭拍/頭拍-00-compressed.jpg" alt="jonalex.io logo">
+    </footer>
 
     <!-- SCRIPT -->
     <script src="./script.js"></script>

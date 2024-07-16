@@ -41,9 +41,14 @@ html {
 
 /* BASE STYLES */
 body {
-    font-family: Courier, monospace;
-    line-height: 1.5;
+    /* TEXT */
+    font-family: courier, monospace;
+    font-weight: 400;
+    line-height: 1.5rem;
     color: var(--main-gray);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 0.35px;
+    /* BACKGROUND */
     background-image: linear-gradient(180deg,
             rgba(175, 175, 225, 0.5) 25%,
             rgba(150, 150, 200, 0.67) 45%,
@@ -53,15 +58,7 @@ body {
         url(./assets/背景/porcupine-hills-alltrails-upscale-2-HSL飽和度偏移RY減少33.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-p {
-    color: var(--main-gray);
-    font-weight: 400;
-    /* -webkit-font-smoothing: antialiased; */
-    -webkit-text-stroke: 0.35px;
 }
 
 ul {
@@ -69,9 +66,12 @@ ul {
 }
 
 a {
+    color: var(--main-gray);
     text-decoration: none;
+}
+
+.social-btn i {
     color: var(--main-white);
-    font-weight: 400;
 }
 
 button {
@@ -84,45 +84,42 @@ img {
 }
 
 /* ***** ANIMATION ***** */
-/* FADEIN ANIMATION */
+/* FADE_IN_ANIMATION */
 /* https://codepen.io/JTBennett/pen/BjpXRo */
 .fade-in {
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 1.5s;
 }
 
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
 
-/* BUTTON HIGHLIGHT ANIMATION */
+/* BUTTON_HIGHLIGHT_ANIMATION */
 /* https://ui-buttons.web.app/material-ripple */
-
 #btn-highlight {
     position: relative;
-    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     mask-image: radial-gradient(#000, #fff);
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     overflow: hidden;
 }
 
-#btn-highlight:before {
-    opacity: 0.2;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    background: #fff;
+#btn-highlight::before {
     content: "";
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    left: 50%;
     width: 100%;
-    /* TODO: semi-fix */
-    /* height: 100%; */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.2;
+    transform: translate(-50%, -50%) scale(0);
     animation: enlarge 1.5s infinite;
 }
 
@@ -133,129 +130,65 @@ img {
     }
 }
 
-/* ***** BORDER TESTING ***** */
-/* .card,
-.card .hero,
-.card .title,
-.card .hero .hero-links-container,
-.card .hero .hero-links-container button,
-#about-card p,
-#about-card .slideshow-box,
-#scores-card,
-#scores-card button,
-.nav,
-.nav ul,
-.nav ul li a,
-#bottom-nav,
-.credits-scroll,
-.credits-scroll img,
-.contact,
-.contact .socials-container,
-.contact .socials-container a,
-.contact .socials-container i,
-.copyright {
-    border: solid red;
-} */
-
-/* * {
-    border: solid red;
-} */
-
-/* ***** SECTIONS ***** */
-/* card */
-
-/* NAV */
-.nav {
-    position: absolute;
-    width: 100%;
-    top: 2.5rem;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2.5rem;
-}
-
-.nav-list a {
-    display: flex;
-    color: var(--main-gray);
-    transition: all 0.33s ease-out;
-}
-
-.nav-list a:hover {
-    transform: scale(110%);
-}
-
-#bottom-nav {
-    position: relative;
-    text-decoration: underline;
-}
-
-/* HERO */
+/* ***** DEFAULT_SECTIONS ***** */
+/* CARD */
 .card {
-    position: relative;
+    /* VERITCAL_LAYOUT */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
     /* browser height support redundancy */
     height: clamp(35rem, 80vh, 70rem);
     height: clamp(35rem, 80svh, 70rem);
-    /* height: clamp(35rem, 45rem, 70rem); */
-    padding: 1rem;
-    /* HORIZONTAL LAYOUT */
+    /* HORIZONTAL_LAYOUT */
     max-width: 40rem;
-    margin: 37.5px auto;
-    border-radius: 40px;
+    margin: 2rem auto;
+    /* STYLING */
+    border-radius: 2.5rem;
     box-shadow: 0px 0px 33px #333333;
-    /* background-image: url(./assets/背景/mountains-bottom.jpg); */
     background-size: cover;
-    background-position: bottom;
     background-position: 0% 99%;
     background-image: linear-gradient(180deg,
-            /* rgba(175, 175, 225, 0.4) 0%, */
-            /* rgba(50, 50, 100, 0.4) 100%), */
             rgba(180, 180, 230, 0.35) 0%,
             rgba(100, 100, 150, 0.35) 100%),
         url(./assets/背景/mountains-bottom.jpg);
 }
 
-.card i {
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: none;
-    margin: 0;
-    padding: 0;
+.card .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
-.card .hero #social-icon img {
+.card .hero .social-icon,
+.card .hero .title,
+.card .hero .button-container {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.card .hero .social-icon img {
     max-width: 5rem;
-    border-radius: 75%;
-    opacity: 80%;
+    border-radius: 50%;
+    opacity: 0.8;
     border: solid #000000 1.5px;
     box-shadow: 0px 0px 7.5px #333333;
+    margin-top: 2.5rem;
 }
 
-.card .hero div {
-    max-height: 100%;
-    max-width: 30rem;
-    min-width: 60%;
-    margin: 0 auto 0 auto;
+.card .hero .title img {
+    max-width: 70%;
+    filter: opacity(0.7);
+    margin: 1rem;
 }
 
-.card .hero .title #zh-spacing {
-    margin-top: 8px;
-}
-
-/* .card .hero .title img {
-    margin-top: -0.75rem;
-} */
-
-.card .hero .hero-links-container button {
+.card .hero .button-container button {
     display: block;
     margin: 2.5rem auto;
-    color: black;
     width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     line-height: 2.5;
@@ -265,31 +198,381 @@ img {
     transition: all 0.5s ease-out;
 }
 
-.card .hero .hero-links-container button:nth-child(1) {
+.card .hero .button-container button:first-of-type {
     margin-top: 0rem;
 }
 
-.card .hero .hero-links-container button a {
-    display: block;
+.card .hero .button-container button a {
+    display: inherit;
+    color: var(--main-white);
     transition: all 0.33s ease-out;
 }
 
-.card .hero .hero-links-container button:hover {
+.card .hero .button-container button:hover {
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 0px 1px 9.99px #888888;
 }
 
-.card .hero .hero-links-container button a:hover {
+.card .hero .button-container button a:hover {
     color: black;
 }
 
-.card .hero .title img {
-    max-width: 70%;
-    filter: opacity(70%);
-    margin: 0.75rem;
+/* NAV */
+.nav {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    max-width: 40rem;
 }
 
-/* EVENT */
+.nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+}
+
+.nav .nav-list li:first-child {
+    margin-right: auto;
+    /* Pushes first <li> item to the left */
+}
+
+.nav .nav-list li:last-child {
+    margin-left: auto;
+    /* Pushes last <li> item to the right */
+}
+
+.nav .nav-list li a {
+    display: inherit;
+    transition: all 0.33s ease-out;
+}
+
+.nav .nav-list li a:hover {
+    transform: scale(1.1);
+}
+
+.card #bottom-nav {
+    position: static;
+    margin-top: auto;
+    margin-bottom: 2.5rem;
+}
+
+/* CREDITS */
+.credits-divider {
+    margin: 0 auto 0.5rem auto;
+    max-width: 40rem;
+}
+
+.credits-divider p {
+    color: var(--main-white);
+    border-top: 1.5px dotted rgba(232, 232, 232, 0.75);
+    border-left: 1.5px dotted rgba(232, 232, 232, 0.75);
+    border-top-left-radius: 20px;
+    padding: 0.25rem 0 0 0.5rem;
+    width: max-content;
+}
+
+.credits-scroll {
+    /* styles */
+    display: flex;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 40rem;
+    /* scrolling */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 5% 95%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 5% 95%,
+            transparent);
+    overflow: hidden;
+}
+
+.credits-scroll img {
+    margin: 0rem 0.5rem;
+    animation: slide 60s infinite linear;
+}
+
+.credits-scroll .square {
+    border-radius: 25px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-10*(200px + (2*0.5rem) - 0.67rem)));
+    }
+}
+
+/* CONTACT */
+.contact {
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 20rem;
+}
+
+.contact .contact-text p {
+    color: white;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+    max-width: 20rem;
+}
+
+
+.contact .contact-headshot img {
+    /* POSITIONING */
+    max-width: 20rem;
+    margin: 1rem auto 1rem auto;
+    /* STYLING */
+    border-radius: 2rem;
+    opacity: 85%;
+}
+
+.contact .socials-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 20rem;
+    min-width: 20rem;
+}
+
+.contact .socials-container .social-btn i {
+    transition: all 0.5s ease-out;
+}
+
+.contact .socials-container .social-btn i:hover {
+    scale: 125%;
+}
+
+/* FOOTER */
+footer {
+    margin: 4rem 0 2rem 0;
+}
+
+footer .copyright {
+    font-size: var(--fs-200);
+    text-align: center;
+    color: white;
+}
+
+footer .logo {
+    position: fixed;
+    width: 2.5rem;
+    bottom: 1rem;
+    left: 1rem;
+    opacity: 33%;
+}
+
+/* MUSIC */
+#music-card {
+    height: auto;
+    padding: 2.5rem 0;
+}
+
+#music-card .hero .audio-player {
+    width: 100%;
+    max-width: 40rem;
+}
+
+/* TODO: Double check width when hitting 1st media query */
+#music-card .hero .audio-player a p {
+    position: absolute;
+    z-index: 0;
+    margin: 0rem 1rem;
+}
+
+#music-card .hero .audio-player iframe {
+    position: relative;
+    z-index: 1;
+}
+
+#music footer {
+    margin-top: 2rem;
+}
+
+/* ABOUT */
+#about-card {
+    height: auto;
+    padding-top: 5rem;
+}
+
+#about-card #about-text {
+    text-align: left;
+    margin: 0 2.5rem;
+    color: black;
+}
+
+#about-card #about-text a {
+    color: var(--darkest-gray);
+}
+
+#about-card #about-text .slideshow-box {
+    width: 6rem;
+    height: 6rem;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+#about-card #about-text .slideshow-box img {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    -webkit-animation-name: cycle;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: cycle;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+
+
+/* CYCLE IMAGE ANIMATION */
+/* https://jsfiddle.net/5M2PD/4/ */
+@-webkit-keyframes cycle {
+    from {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes cycle {
+    from {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#f1 {
+    -webkit-animation-delay: -0s;
+    animation-delay: -0s;
+}
+
+#f2 {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+#f3 {
+    -webkit-animation-delay: -8s;
+    animation-delay: -8s;
+}
+
+/* TODO:PUSH,CONTINUE */
+/* SCORES */
+#scores-card {
+    height: auto;
+    padding-top: 5rem;
+    min-height: 80vh;
+    min-height: 80svh;
+}
+
+/* ACCORDION_BUTTON COLLAPSIBLE_BUTTON */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
+#scores-card .collapsible-button {
+    font-size: var(--fs-300);
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    text-align: left;
+}
+
+/* TODO:檢查active在JS檔案 */
+/* .active,  */
+#scores-card .collapsible-button:hover {
+    background-color: #666;
+}
+
+#scores-card .content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(241, 241, 241, 0.75);
+    padding-left: 1rem;
+}
+
+#scores-card .content:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+#scores-card .content p,
+#scores-card .content a {
+    display: block;
+    text-align: left;
+    color: var(--darkest-gray);
+    -webkit-text-fill-color: var(--darkest-gray);
+    padding: 1rem 1rem 1rem 0;
+}
+
+#scores-card .content a {
+    color: lightgray;
+    padding: 0;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 0.33rem 0;
+}
+
+#scores-card .content a:last-of-type {
+    margin-bottom: 0.67rem;
+}
+
+#scores-card .content audio {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+#scores-card .content #audio-pending {
+    opacity: 50%;
+}
+
+#scores-card .content #audio-pending:hover {
+    cursor: not-allowed;
+}
+
+#scores-card .content #nested-button {
+    width: 100%;
+}
+
+#scores-card .content #nested-content:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+}
+
+/* TODO:檢查active在JS檔案 */
+/* .active:after {
+    content: "\2212";
+} */
+
+/* EVENTS */
 .card .hero .event-info hr:last-of-type {
     margin-bottom: 2.5rem;
 }
@@ -336,10 +619,6 @@ img {
     text-wrap: nowrap;
 }
 
-/* .event-card .title {
-    margin-top: 2.5rem;
-} */
-
 .event-card {
     padding-top: 5rem;
     height: auto;
@@ -358,411 +637,8 @@ img {
     margin-bottom: 2.5rem;
 }
 
-/* MUSIC */
-#music-card {
-    height: auto;
-    padding: 2.5rem 0 2.5rem 0;
-}
-
-#music-card .hero {
-    width: 100% !important;
-}
-
-#music-card .hero p {
-    position: absolute;
-    top: 17.5rem;
-    z-index: 0;
-}
-
-#music-card .hero iframe {
-    position: relative;
-    z-index: 1;
-}
-
-#music-card iframe {
-    /* opacity: 75%; */
-}
-
-#music-card #audio-player {
-    max-width: 40rem;
-}
-
-/* ABOUT */
-#about-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2.5rem;
-    padding-top: 5rem;
-    /* HORIZONTAL LAYOUT */
-    max-width: 40rem;
-    margin: 37.5px auto;
-    /* STYLING */
-    border-radius: 40px;
-    box-shadow: 0px 0px 33px #333333;
-    background: #dddddd;
-    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
-    background-image: linear-gradient(180deg,
-            rgba(175, 175, 225, 0.2) 0%,
-            rgba(50, 50, 100, 0.2) 100%),
-        url(./assets/背景/mountains-bottom-被裁切.jpg);
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-}
-
-#about-card p {
-    text-align: left;
-    -webkit-text-fill-color: var(--darkest-gray);
-    color: var(--darkest-gray);
-}
-
-#about-card p .slideshow-box {
-    width: 5.5rem;
-    height: 5.5rem;
-    float: right;
-    margin: 0 0 5px 5px;
-}
-
-#about-card p .slideshow-box img {
-    max-width: 5.5rem;
-    max-height: 5.5rem;
-    position: absolute;
-    -webkit-animation-name: cycle;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 12s;
-    animation-name: cycle;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-}
-
-#about-card p .slideshow-box img #f3 {
-    height: auto;
-}
-
-#about-card p a {
-    color: var(--darkest-gray);
-}
-
-
-
-/* CYCLE IMAGE ANIMATION */
-/* https://jsfiddle.net/5M2PD/4/ */
-@-webkit-keyframes cycle {
-    0% {
-        opacity: 0;
-    }
-
-    33% {
-        opacity: 1;
-    }
-
-    55% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes cycle {
-    0% {
-        opacity: 0;
-    }
-
-    33% {
-        opacity: 1;
-    }
-
-    55% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-#f1 {
-    -webkit-animation-delay: -0s;
-    animation-delay: -0s;
-}
-
-#f2 {
-    -webkit-animation-delay: -4s;
-    animation-delay: -4s;
-}
-
-#f3 {
-    -webkit-animation-delay: -8s;
-    animation-delay: -8s;
-}
-
-/* SCORES */
-#scores-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 2.5rem; */
-    padding: 5rem 0rem 2.25rem 0rem;
-    min-height: 80vh;
-    min-height: 80svh;
-    /* HORIZONTAL LAYOUT */
-    max-width: 40rem;
-    margin: 50px auto;
-    /* STYLING */
-    border-radius: 40px;
-    box-shadow: 0px 0px 33px #333333;
-    background: #dddddd;
-    background-image: url(./assets/背景/mountains-bottom-被裁切.jpg);
-    background-image: linear-gradient(180deg,
-            rgba(175, 175, 225, 0.2) 0%,
-            rgba(50, 50, 100, 0.2) 100%),
-        url(./assets/背景/mountains-bottom-被裁切.jpg);
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    font-family: courier, monospace;
-}
-
-#scores-card .collapsible-button,
-#scores-card .content p {
-    text-align: left;
-    width: 100%;
-}
-
-#scores-card .content p {
-    -webkit-text-fill-color: var(--darkest-gray);
-    color: var(--darkest-gray);
-}
-
-#scores-card .content p {
-    padding: 1rem
-}
-
-#scores-card .content a {
-    margin-left: 1rem;
-}
-
-#scores-card iframe {
-    width: 100%;
-    height: 40rem;
-    margin-top: 1rem;
-}
-
-#scores-card .content audio {
-    width: 100%;
-    padding: 0 1rem 0 1rem;
-}
-
-#scores-card .content a {
-    color: var(--main-gray);
-    text-decoration: underline;
-}
-
-#scores-card #bottom-nav {
-    margin-top: auto;
-}
-
-#scores-card #audio-pending:hover {
-    cursor: not-allowed;
-}
-
-/* COLLAPSIBLE_BUTTON */
-.collapsible-button {
-    font-size: var(--fs-300);
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-}
-
-.active,
-.collapsible-button:hover {
-    background-color: #555;
-}
-
-.collapsible-button:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.content {
-    max-height: 0;
-    overflow: hidden;
-    /* transition: max-height 0.2s ease-out; */
-    background-color: #f1f1f1;
-}
-
-.content .collapsible-button {
-    margin-left: 0.66rem;
-}
-
-.content .collapsible-button:first-of-type {
-    margin-top: 1rem;
-}
-
-/* POSTERS */
-
-.credits-divider {
-    margin: 0 auto 10px auto;
-    max-width: 40rem;
-}
-
-.credits-divider p {
-    color: #e8e8e8;
-    border-top: 1.5px dotted rgba(232, 232, 232, 0.75);
-    border-left: 1.5px dotted rgba(232, 232, 232, 0.75);
-    border-top-left-radius: 20px;
-    padding: 5px 0 0 10px;
-    width: max-content;
-}
-
-.credits-scroll {
-    display: flex;
-    height: 200px;
-    margin: 0 auto 50px auto;
-    max-width: 40rem;
-    /* Scrolling */
-    -webkit-mask-image: linear-gradient(to right,
-            transparent,
-            black 5% 95%,
-            transparent);
-    mask-image: linear-gradient(to right,
-            transparent,
-            black 5% 95%,
-            transparent);
-    overflow: hidden;
-}
-
-.credits-scroll img {
-    margin: 0rem 0.5rem;
-    animation: slide 75s infinite linear;
-}
-
-.credits-scroll .square {
-    border-radius: 25px;
-}
-
-.credits-scroll p {
-    /* border: solid red; */
-    position: absolute;
-    z-index: 1;
-    bottom: -100px;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-9*(200px + 0.5rem - 5px)));
-    }
-}
-
-/* CONTACT */
-.contact {
-    margin: 0 auto;
-    max-width: 40rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contact .socials-container {
-    text-shadow: 0px 0px 5px #1f1f1f;
-    text-shadow: 0px 0px 5px var(--main-gray);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* display: grid; */
-    /* grid-template-columns: repeat(6, 1fr); */
-    /* width: 80%; */
-    max-width: 20rem;
-    /* border: solid red; */
-}
-
-.contact .socials-container .social-btn {
-    margin: 5px 1rem;
-}
-
-.contact .socials-container .social-btn:first-child {
-    margin-left: 0;
-}
-
-.contact .socials-container .social-btn:last-child {
-    margin-right: 0;
-}
-
-.contact .socials-container .social-btn i {
-    display: block;
-    transition: all 0.5s ease-out;
-}
-
-.contact .socials-container .social-btn i:hover {
-    scale: 125%;
-}
-
-.copyright {
-    font-size: var(--fs-200);
-    margin: 2rem 0;
-    color: white;
-}
-
-.copyright #version {
-    color: #777;
-}
-
-.contact .contact-text p {
-    color: white;
-    letter-spacing: 2rem;
-    text-indent: 2rem;
-    margin-top: 1.75rem;
-}
-
-.contact .contact-headshot img {
-    /* POSITIONING */
-    max-width: 20rem;
-    display: flex;
-    margin: 1rem auto 1rem auto;
-    /* STYLING */
-    border-radius: 1.75rem;
-    /* border: solid black 0.25rem; */
-    opacity: 85%;
-}
-
 .contact #event-poster img {
     opacity: 100%;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-}
-
-#logo {
-    position: fixed;
-    height: 2.25rem;
-    bottom: 1rem;
-    left: 1rem;
-    opacity: 33%;
-    height: 2.25rem;
 }
 
 /* *****RESPONSIVE-DESIGN***** */
@@ -816,3 +692,5 @@ footer {
 @media only screen and (max-width: 414px) {
     :root {}
 }
+
+/* TODO:再一次檢查所有剩下的TODO */
