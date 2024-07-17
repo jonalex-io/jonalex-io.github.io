@@ -648,12 +648,3 @@ footer .logo {
         font-size: 87.5%;
     }
 }
-
-/* GPT_ANDROID_FONT_WEIGHT  */
-@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-
-    /* Android specific styles */
-    body {
-        font-weight: 600;
-    }
-}
