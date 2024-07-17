@@ -369,6 +369,7 @@ footer .logo {
     opacity: 33%;
 }
 
+/* ***** ALT_ID_SECTIONS */
 /* MUSIC */
 #music-card {
     height: auto;
@@ -573,7 +574,7 @@ footer .logo {
     content: "\2212";
 } */
 
-/* TODO:CONTINUE */
+/* TODO:CONTINUE_AFTER_RESPONSIVE */
 /* EVENTS */
 .card .hero .event-info hr:last-of-type {
     margin-bottom: 2.5rem;
@@ -643,50 +644,22 @@ footer .logo {
     opacity: 100%;
 }
 
-/* *****RESPONSIVE-DESIGN***** */
-/* hit side margin equal to top margin of hero card */
-@media (max-width: calc(40rem + 100px)) {
+/* ***** RESPONSIVE-DESIGN ***** */
+/* MEDIA_01: both margin sides <= margin top */
+@media (max-width: calc(40rem + 4rem)) {
 
     .card,
-    #about-card,
-    #scores-card,
-    .credits-scroll,
-    .credits-divider,
-    .contact {
-        max-width: calc(100% - 50px);
-    }
-
-    .card,
+    .credits .credits-divider,
+    .credits .credits-scroll,
+    .contact,
+    footer,
     #about-card,
     #scores-card {
-        margin-top: 25px;
-    }
-
-    .credits-scroll {
-        margin-bottom: 25px;
+        max-width: calc(100% - 4rem);
     }
 
     html {
-        /* 16px to 14px */
         font-size: 87.5%;
-    }
-}
-
-/* Background Size */
-@media (min-height: 1130px) {
-
-    .card,
-    #about-card,
-    #scores-card {
-        background-size: 100% 100%;
-    }
-}
-
-/* Background Size */
-@media (max-width: 66.66vh) {
-
-    .card {
-        background-size: 100% 100%;
     }
 }
 
