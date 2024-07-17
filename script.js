@@ -13,3 +13,9 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+        document.body.classList.add('android-device');
+    }
+});

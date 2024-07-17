@@ -59,6 +59,10 @@ body {
     background-attachment: fixed;
 }
 
+.android-device {
+    font-weight: 600;
+}
+
 ul {
     list-style: none;
 }
