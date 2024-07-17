@@ -381,7 +381,6 @@ footer .logo {
     max-width: 40rem;
 }
 
-/* TODO: Double check width when hitting 1st media query */
 #music-card .hero .audio-player a p {
     position: absolute;
     z-index: 0;
@@ -574,44 +573,43 @@ footer .logo {
     content: "\2212";
 } */
 
-/* TODO:CONTINUE_AFTER_RESPONSIVE */
 /* EVENTS */
-.card .hero .event-info hr:last-of-type {
-    margin-bottom: 2.5rem;
+#event-card {
+    padding-top: 4rem;
+    height: auto;
 }
 
-.card .hero .event-info p {
-    font-weight: 600;
-    text-wrap: nowrap !important;
+#event-card .hero {
+    padding: 0 2rem 2rem 2rem;
 }
 
-.card .hero .event-info #event-title {
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    /* This helps prevent any extra spaces from causing wrapping */
-    overflow: hidden;
-    /* This hides any text that overflows the element width */
-    font-weight: bold;
-
-}
-
-.card .hero .event-info hr:first-of-type {
-    margin-bottom: 0.5rem;
-}
-
-.card .hero .event-info hr:last-of-type {
-    margin-top: 0.5rem;
-}
-
-#event-poster {
-    margin: -1rem auto 1rem auto;
-}
-
-#event-info-list {
+#event-card .hero .event-info #event-info-list {
     list-style-type: disc;
     text-align: left;
     margin: auto 1rem auto 1rem;
+}
+
+#event-card .hero .event-info hr:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+#event-card .hero .event-info hr:last-of-type {
+    margin-top: 0.5rem;
+}
+
+#event-card .hero .event-video {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+#event-card .hero .event-video iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+/* CONTINUE */
+#event-card .hero #event-button-container {
+    width: 100%;
 }
 
 #event-button {
@@ -622,22 +620,9 @@ footer .logo {
     text-wrap: nowrap;
 }
 
-.event-card {
-    padding-top: 5rem;
-    height: auto;
-}
-
-.event-card .event-info,
-.event-card .event-links {
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-
-.event-card iframe {
-    /* min-width: 30rem; */
-    min-width: 100%;
-    height: 16.8750000001rem;
-    margin-bottom: 2.5rem;
+#event-poster-grad img {
+    position: static;
+    margin: 2.5rem auto;
 }
 
 .contact #event-poster img {
@@ -645,7 +630,7 @@ footer .logo {
 }
 
 /* ***** RESPONSIVE-DESIGN ***** */
-/* MEDIA_01: both margin sides <= margin top */
+/* MEDIA_01: .card both margin sides <= margin-top */
 @media (max-width: calc(40rem + 4rem)) {
 
     .card,
@@ -662,10 +647,3 @@ footer .logo {
         font-size: 87.5%;
     }
 }
-
-/* TODO: font size need to change between tablet and phone sizes? */
-@media only screen and (max-width: 414px) {
-    :root {}
-}
-
-/* TODO:再一次檢查所有剩下的TODO */
