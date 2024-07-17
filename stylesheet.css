@@ -620,7 +620,8 @@ footer .logo {
 }
 
 .event-poster {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .event-poster img {
