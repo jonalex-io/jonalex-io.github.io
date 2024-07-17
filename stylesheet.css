@@ -43,11 +43,9 @@ html {
 body {
     /* TEXT */
     font-family: courier, monospace;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5rem;
     color: var(--main-gray);
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke: 0.35px;
     /* BACKGROUND */
     background-image: linear-gradient(180deg,
             rgba(175, 175, 225, 0.5) 25%,
@@ -648,5 +646,13 @@ footer .logo {
 
     html {
         font-size: 87.5%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+
+    /* Android specific styles */
+    body {
+        font-weight: 600;
     }
 }
