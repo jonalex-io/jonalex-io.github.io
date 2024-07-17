@@ -352,7 +352,7 @@ img {
 
 /* FOOTER */
 footer {
-    margin: 4rem 0 2rem 0;
+    margin: 4rem auto 2rem auto;
 }
 
 footer .copyright {
@@ -607,26 +607,25 @@ footer .logo {
     height: 20rem;
 }
 
-/* CONTINUE */
 #event-card .hero #event-button-container {
+    max-width: 40rem;
+}
+
+#event-card .hero #event-button-container #event-button {
     width: 100%;
 }
 
-#event-button {
-    width: 100%;
-}
-
-#event-button a {
+#event-card .hero #event-button-container #event-button a {
     text-wrap: nowrap;
 }
 
-#event-poster-grad img {
-    position: static;
-    margin: 2.5rem auto;
+.event-poster {
+    text-align: center;
 }
 
-.contact #event-poster img {
-    opacity: 100%;
+.event-poster img {
+    max-width: 20rem;
+    border-radius: 1rem;
 }
 
 /* ***** RESPONSIVE-DESIGN ***** */
@@ -646,4 +645,5 @@ footer .logo {
     html {
         font-size: 87.5%;
     }
-}
+
+    /* } */
