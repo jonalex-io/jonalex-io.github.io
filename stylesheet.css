@@ -649,6 +649,7 @@ footer .logo {
     }
 }
 
+/* GPT_ANDROID_FONT_WEIGHT  */
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
 
     /* Android specific styles */
