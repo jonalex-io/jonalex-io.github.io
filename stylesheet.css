@@ -218,42 +218,42 @@ img {
 }
 
 /* NAV */
-.nav {
+.card .nav {
     position: absolute;
     top: 4rem;
     width: 100%;
     max-width: 40rem;
 }
 
-.nav .nav-list {
+.card .nav .nav-list {
     display: flex;
     justify-content: space-between;
     padding: 0 2.5rem;
 }
 
-.nav .nav-list li:first-child {
+.card .nav .nav-list li:first-child {
     margin-right: auto;
     /* Pushes first <li> item to the left */
 }
 
-.nav .nav-list li:last-child {
+.card .nav .nav-list li:last-child {
     margin-left: auto;
     /* Pushes last <li> item to the right */
 }
 
-.nav .nav-list li a {
+.card .nav .nav-list li a {
     display: inherit;
     transition: all 0.33s ease-out;
 }
 
-.nav .nav-list li a:hover {
+.card .nav .nav-list li a:hover {
     transform: scale(1.1);
 }
 
 .card #bottom-nav {
     position: static;
-    margin-top: auto;
-    margin-bottom: 2.5rem;
+    /* margin-top: auto; to push scores-container to top of card */
+    margin: auto auto 2.5rem auto;
 }
 
 /* CREDITS */
@@ -620,6 +620,7 @@ footer .logo {
 }
 
 .event-poster {
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
 }
@@ -634,10 +635,12 @@ footer .logo {
 @media (max-width: calc(40rem + 4rem)) {
 
     .card,
+    .card .nav,
     .credits .credits-divider,
     .credits .credits-scroll,
     .contact,
     footer,
+    #music-card,
     #about-card,
     #scores-card {
         max-width: calc(100% - 4rem);
@@ -646,5 +649,4 @@ footer .logo {
     html {
         font-size: 87.5%;
     }
-
-    /* } */
+}
