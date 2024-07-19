@@ -141,8 +141,9 @@ img {
     justify-content: center;
     text-align: center;
     /* browser height support redundancy */
-    height: clamp(35rem, 80vh, 70rem);
-    height: clamp(35rem, 80svh, 70rem);
+    height: 47.5rem;
+    /* height: clamp(35rem, 80vh, 70rem); */
+    /* height: clamp(35rem, 80svh, 70rem); */
     /* HORIZONTAL_LAYOUT */
     max-width: 40rem;
     margin: 2rem auto;
