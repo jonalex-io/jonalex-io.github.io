@@ -65,7 +65,7 @@ strong {
 }
 
 p {
-    color: rgba(0, 0, 0, 0.67);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 ul {
@@ -536,8 +536,6 @@ footer .logo {
 #scores-card .content p {
     display: block;
     text-align: left;
-    color: var(--darkest-gray);
-    -webkit-text-fill-color: var(--darkest-gray);
     padding: 1rem 1rem 1rem 0;
 }
 
