@@ -43,7 +43,7 @@ html {
 body {
     /* TEXT */
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 1.5rem;
     color: var(--main-gray);
     /* BACKGROUND */
