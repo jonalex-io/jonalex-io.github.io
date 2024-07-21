@@ -42,8 +42,8 @@ html {
 /* BASE STYLES */
 body {
     /* TEXT */
-    font-family: courier, monospace;
-    font-weight: 575;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     line-height: 1.5rem;
     color: var(--main-gray);
     /* BACKGROUND */
