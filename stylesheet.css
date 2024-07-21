@@ -64,6 +64,10 @@ strong {
     color: black;
 }
 
+p {
+    color: var(--darker-gray);
+}
+
 ul {
     list-style: none;
 }
