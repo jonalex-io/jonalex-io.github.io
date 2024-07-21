@@ -65,7 +65,7 @@ strong {
 }
 
 p {
-    color: var(--darkest-gray);
+    color: rgba(0, 0, 0, 0.67);
 }
 
 ul {
