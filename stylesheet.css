@@ -65,7 +65,7 @@ strong {
 }
 
 p {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 ul {
@@ -418,7 +418,8 @@ footer .logo {
 }
 
 #about-card #about-text a {
-    color: var(--darkest-gray);
+    text-decoration: underline;
+    text-decoration-color: var(--main-gray);
 }
 
 #about-card #about-text .slideshow-box {
@@ -524,7 +525,7 @@ footer .logo {
 #scores-card .content {
     max-height: 0;
     overflow: hidden;
-    background-color: rgba(241, 241, 241, 0.75);
+    background-color: rgba(245, 245, 245, 0.75);
     /* padding for sub-content accordion indent */
     padding-left: 1rem;
 }
