@@ -109,14 +109,14 @@ img {
 
 /* BUTTON_HIGHLIGHT_ANIMATION */
 /* https://ui-buttons.web.app/material-ripple */
-#btn-highlight {
+#btn1 {
     position: relative;
     mask-image: radial-gradient(#000, #fff);
     -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     overflow: hidden;
 }
 
-#btn-highlight::before {
+#btn1::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -232,6 +232,7 @@ img {
     top: 4rem;
     width: 100%;
     max-width: 40rem;
+    font-weight: normal;
 }
 
 .card .nav .nav-list {
