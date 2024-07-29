@@ -234,6 +234,10 @@ img {
     max-width: 40rem;
 }
 
+.card .nav:hover {
+    cursor: pointer;
+}
+
 .card .nav .nav-list {
     display: flex;
     justify-content: space-between;
