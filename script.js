@@ -56,7 +56,7 @@ const languages = [
     {
         "language ISO": "zh",
         "nav text": ["◂首頁", "ZH/EN"],
-        "hero img src": "./assets/hero-title/web-hero-title-音樂聲效-聲音設計-alt.png",
+        "hero img src": "./assets/hero-title/web-hero-title-音樂聲效-聲音設計.png",
         "button text": ["音樂聲效", "關於我", "樂譜"],
         "credits text": "作品集：",
         "contact text": "與我聯絡",
