@@ -39,6 +39,7 @@ const heroImg = document.querySelector(".title img");
 // const aboutTextEn = document.getElementsByClassName(".about-en")
 // const aboutTextZh = document.getElementsByClassName(".about-zh")
 
+// TODO:更改分頁名稱
 // TODO:aboutLanguage
 
 // LANGUAGE_OBJECTS_ARRAY
