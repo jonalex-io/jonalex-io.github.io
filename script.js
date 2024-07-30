@@ -70,7 +70,7 @@ update(languages[0]);
 
 function update(language) {
     document.documentElement.lang = language["language ISO"];
-    homeButton.innerText = language["nav text"][0];
+    // homeButton.innerText = language["nav text"][0];
     languageButton.innerText = language["nav text"][1];
     heroImg.src = language["hero img src"];
     btn1.innerText = language["button text"][0];
