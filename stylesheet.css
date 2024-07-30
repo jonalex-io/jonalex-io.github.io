@@ -422,6 +422,14 @@ footer .logo {
     color: black;
 }
 
+#about-card #about-text .about-zh {
+    display: none;
+}
+
+#about-card #about-text .about-zh {
+    display: none;
+}
+
 #about-card #about-text a {
     text-decoration: underline;
     text-decoration-color: var(--main-gray);
