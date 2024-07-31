@@ -29,6 +29,7 @@ let language = "EN";
 // CONSTANTS
 const languageButton = document.querySelector("#language a");
 const homeButton = document.querySelector("#home a");
+const homeButtonBottom = document.querySelector("#bottom-nav #home a");
 const btn1 = document.querySelector("#btn1");
 const btn2 = document.querySelector("#btn2");
 const btn3 = document.querySelector("#btn3");
@@ -36,8 +37,10 @@ const credits = document.querySelector(".credits-divider p");
 const contact = document.querySelector(".contact-text p");
 const copyright = document.querySelector("#copyright-text");
 const heroImg = document.querySelector(".title img");
-// const aboutTextEn = document.getElementsByClassName(".about-en")
-// const aboutTextZh = document.getElementsByClassName(".about-zh")
+const aboutText = [
+    document.querySelector(".about-en"),
+    document.querySelector(".about-zh")
+]
 
 // TODO:更改分頁名稱
 // TODO:aboutLanguage
@@ -47,39 +50,60 @@ const languages = [
     {
         "language ISO": "en",
         "nav text": ["◂Home", "中/英"],
+        "nav text bottom": "◂Home",
         "hero img src": "./assets/hero-title/web-hero-title-music-sound-audio-design.png",
         "button text": ["music", "about", "scores"],
         "credits text": "credits & projects:",
         "contact text": "contact",
         "copyright text": "copyright jonalex.io",
+        "about text": aboutText[0],
     },
     {
         "language ISO": "zh",
         "nav text": ["◂首頁", "ZH/EN"],
+        "nav text bottom": ["◂首頁"],
         "hero img src": "./assets/hero-title/web-hero-title-音樂聲效-聲音設計.png",
         "button text": ["音樂聲效", "關於我", "樂譜"],
         "credits text": "作品集：",
         "contact text": "與我聯絡",
         "copyright text": "版權 jonalex.io",
+        "about text": aboutText[1]
     }
 ]
 
-// INITIALIZE_BUTTON
+// SET_EN_&_INITIALIZE_BUTTON
+// update(languages[0]);
 languageButton.onclick = changeLanguage;
-update(languages[0]);
 
+// TODO:use loop to iterate if not null
 function update(language) {
     document.documentElement.lang = language["language ISO"];
-    // homeButton.innerText = language["nav text"][0];
+    if (homeButton != null) {
+        homeButton.innerText = language["nav text"][0];
+    }
     languageButton.innerText = language["nav text"][1];
-    heroImg.src = language["hero img src"];
-    btn1.innerText = language["button text"][0];
-    btn2.innerText = language["button text"][1];
-    btn3.innerText = language["button text"][2];
+    if (homeButton != null) {
+        homeButtonBottom.innerText = language["nav text bottom"];
+    }
+    if (heroImg != null) {
+        heroImg.src = language["hero img src"];
+    }
+    if (btn1 != null && btn2 != null && btn3 != null) {
+        btn1.innerText = language["button text"][0];
+        btn2.innerText = language["button text"][1];
+        btn3.innerText = language["button text"][2];
+    }
     credits.innerText = language["credits text"];
     contact.innerText = language["contact text"];
-    copyright.innerText = language["copyright text"]
-    // document.getElementsByClassName = 
+    if (copyright != null) {
+        copyright.innerText = language["copyright text"]
+    }
+    if (aboutText != null) {
+        aboutText.forEach(element => {
+            element.style.display = "none";
+        });
+        language["about text"].style.display = "block";
+    }
 }
 
 function changeLanguage() {
