@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // //////////////////////////////////////////////////////////////////
 // **** LANGUAGE ****
+// TODO:更改分頁名稱
+// TODO:aboutLanguage
 
 // VARIABLES
 let language = "EN";
@@ -30,20 +32,17 @@ let language = "EN";
 const languageButton = document.querySelector("#language a");
 const homeButton = document.querySelector("#home a");
 const homeButtonBottom = document.querySelector("#bottom-nav #home a");
+const heroImg = document.querySelector(".title img");
 const btn1 = document.querySelector("#btn1");
 const btn2 = document.querySelector("#btn2");
 const btn3 = document.querySelector("#btn3");
 const credits = document.querySelector(".credits-divider p");
 const contact = document.querySelector(".contact-text p");
 const copyright = document.querySelector("#copyright-text");
-const heroImg = document.querySelector(".title img");
 const aboutText = [
     document.querySelector(".about-en"),
     document.querySelector(".about-zh")
 ]
-
-// TODO:更改分頁名稱
-// TODO:aboutLanguage
 
 // LANGUAGE_OBJECTS_ARRAY
 const languages = [
@@ -62,7 +61,7 @@ const languages = [
         "language ISO": "zh",
         "nav text": ["◂首頁", "ZH/EN"],
         "nav text bottom": ["◂首頁"],
-        "hero img src": "./assets/hero-title/web-hero-title-音樂聲效-聲音設計.png",
+        "hero img src": "./assets/hero-title/web-hero-title-音樂聲效-聲音設計-2.png",
         "button text": ["音樂聲效", "關於我", "樂譜"],
         "credits text": "作品集：",
         "contact text": "與我聯絡",
@@ -71,11 +70,25 @@ const languages = [
     }
 ]
 
+// LANGUAGE_ELEMENTS_MAP
+const elementsMap = {
+    languageButton: ["nav text", 1],
+    homeButton: ["nav text", 0],
+    homeButtonBottom: ["nav text bottom"],
+    heroImg: ["hero img src", "src"],
+    btn1: ["button text", 0],
+    btn2: ["button text", 1],
+    btn3: ["button text", 2],
+    credits: ["credits text"],
+    contact: ["contact text"],
+    copyright: ["copyright text"]
+};
+
 // SET_EN_&_INITIALIZE_BUTTON
 // update(languages[0]);
 languageButton.onclick = changeLanguage;
 
-// TODO:use loop to iterate if not null
+// TODO: use loop to check each item in LANGUAGE_OBJECTS_ARRAY, if != null, update
 function update(language) {
     document.documentElement.lang = language["language ISO"];
     if (homeButton != null) {
@@ -105,6 +118,24 @@ function update(language) {
         language["about text"].style.display = "block";
     }
 }
+// function update(language) {
+//     document.documentElement.lang = language["language ISO"];
+
+//     Object.keys(elementsMap).forEach(
+//         (key) => console.log(key)
+//         // if string to key value is not null
+//         // update
+//     );
+
+
+
+//     // ABOUT_TEXT
+//     // * reset all aboutText visibility to none,
+//     // * then only display the relevant "about text" language
+//     aboutText.forEach((element) => element.style.display = "none");
+//     language["about text"].style.display = "block";
+// }
+
 
 function changeLanguage() {
     if (document.documentElement.lang.startsWith('en')) {
