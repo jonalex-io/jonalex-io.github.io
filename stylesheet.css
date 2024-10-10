@@ -390,6 +390,13 @@ footer .logo {
     padding: 2.5rem 0;
 }
 
+#music-card .hero .error-msg {
+    padding-bottom: 1rem;
+    width: 100%;
+    opacity: 67%;
+    font-weight: normal;
+}
+
 #music-card .hero .audio-player {
     width: 100%;
     max-width: 40rem;
