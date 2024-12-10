@@ -316,8 +316,9 @@ img {
         transform: translateX(0);
     }
 
+    /* update first num after "calc(-" */
     to {
-        transform: translateX(calc(-10*(200px + (2*0.5rem) - 0.67rem)));
+        transform: translateX(calc(-11*(200px + (2*0.5rem) - 0.67rem)));
     }
 }
 
