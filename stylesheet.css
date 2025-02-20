@@ -370,22 +370,12 @@ img {
 
 .social-btn:nth-child(1) {
     height: 0.8rem;
-    border-radius: 0.1825rem;
-}
-
-.social-btn:nth-child(1) i {
-    left: 0.2px;
-    top: 0.15px;
+    border-radius: 0.15rem;
 }
 
 .social-btn:nth-child(2) {
-    height: 0.94rem;
-    border-radius: 0.30rem;
-}
-
-.social-btn:nth-child(2) {
-    left: 0.1px;
-    top: 0.15px;
+    height: 0.89rem;
+    border-radius: 0.26rem;
 }
 
 .social-btn:nth-child(-n+2)::before {
