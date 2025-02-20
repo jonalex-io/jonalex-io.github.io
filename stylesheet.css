@@ -356,7 +356,6 @@ img {
     align-items: center;
     justify-content: center;
     transition: transform 0.5s ease-out;
-    /* border: solid red 0.1px; */
 }
 
 .social-btn:hover {
