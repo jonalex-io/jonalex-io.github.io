@@ -356,6 +356,7 @@ img {
     align-items: center;
     justify-content: center;
     transition: transform 0.5s ease-out;
+    /* border: solid red 0.1px; */
 }
 
 .social-btn:hover {
@@ -368,13 +369,23 @@ img {
 }
 
 .social-btn:nth-child(1) {
-    height: 0.765625rem;
-    border-radius: 0.125rem;
+    height: 0.8rem;
+    border-radius: 0.1825rem;
+}
+
+.social-btn:nth-child(1) i {
+    left: 0.2px;
+    top: 0.15px;
 }
 
 .social-btn:nth-child(2) {
-    height: 0.890625rem;
-    border-radius: 0.25rem;
+    height: 0.94rem;
+    border-radius: 0.30rem;
+}
+
+.social-btn:nth-child(2) {
+    left: 0.1px;
+    top: 0.15px;
 }
 
 .social-btn:nth-child(-n+2)::before {
