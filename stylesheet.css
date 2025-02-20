@@ -234,10 +234,6 @@ img {
     max-width: 40rem;
 }
 
-.card .nav:hover {
-    cursor: pointer;
-}
-
 .card .nav .nav-list {
     display: flex;
     justify-content: space-between;
@@ -261,6 +257,7 @@ img {
 
 .card .nav .nav-list li a:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card #bottom-nav {
@@ -324,45 +321,87 @@ img {
 
 /* CONTACT */
 .contact {
-    margin: 4rem auto 0 auto;
+    margin: 4rem auto 0;
     display: flex;
     flex-direction: column;
     width: fit-content;
     max-width: 20rem;
 }
 
-.contact .contact-text p {
+.contact-text p {
     color: white;
     letter-spacing: 2rem;
     text-indent: 2rem;
-    max-width: 20rem;
     text-align: center;
 }
 
-
-.contact .contact-headshot img {
-    /* POSITIONING */
-    max-width: 20rem;
-    margin: 1rem auto 1rem auto;
-    /* STYLING */
+.contact-headshot img {
+    max-width: 100%;
+    margin: 1rem auto;
     border-radius: 2rem;
-    opacity: 85%;
+    opacity: 0.85;
 }
 
-.contact .socials-container {
+.socials-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    max-width: 20rem;
-    min-width: 20rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem;
 }
 
-.contact .socials-container .social-btn i {
-    transition: all 0.5s ease-out;
+.social-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-out;
 }
 
-.contact .socials-container .social-btn i:hover {
-    scale: 125%;
+.social-btn:hover {
+    transform: scale(1.25);
+}
+
+.social-btn i {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn:nth-child(1) {
+    height: 0.765625rem;
+    border-radius: 0.125rem;
+}
+
+.social-btn:nth-child(2) {
+    height: 0.890625rem;
+    border-radius: 0.25rem;
+}
+
+.social-btn:nth-child(-n+2)::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right, 
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.3) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transform: translateX(-150%) translateY(-150%) rotate(22.5deg);
+    animation: strobe 1s infinite linear;
+    z-index: 2;
+}
+
+@keyframes strobe {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(22.5deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(22.5deg);
+    }
 }
 
 /* FOOTER */

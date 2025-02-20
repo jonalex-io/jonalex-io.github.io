@@ -40,8 +40,8 @@ const credits = document.querySelector(".credits-divider p");
 const contact = document.querySelector(".contact-text p");
 const copyright = document.querySelector("#copyright-text");
 const aboutText = [
-    document.querySelector(".about-en"),
-    document.querySelector(".about-zh")
+    document.querySelectorAll(".about-en"),
+    document.querySelectorAll(".about-zh")
 ]
 
 // LANGUAGE_OBJECTS_ARRAY
@@ -112,10 +112,14 @@ function update(language) {
         copyright.innerText = language["copyright text"]
     }
     if (aboutText != null) {
-        aboutText.forEach(element => {
-            element.style.display = "none";
+        aboutText.forEach(nodeList => {
+            nodeList.forEach(element => {
+                element.style.display = "none";
+            });
         });
-        language["about text"].style.display = "block";
+        language["about text"].forEach(element => {
+            element.style.display = "block";
+        });
     }
 }
 // function update(language) {
