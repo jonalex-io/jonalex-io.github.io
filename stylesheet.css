@@ -345,7 +345,7 @@ img {
 .socials-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.25rem;
 }
 
@@ -356,6 +356,7 @@ img {
     align-items: center;
     justify-content: center;
     transition: transform 0.5s ease-out;
+    font-size: 125%;
 }
 
 .social-btn:hover {
@@ -368,13 +369,13 @@ img {
 }
 
 .social-btn:nth-child(1) {
-    height: 0.8rem;
-    border-radius: 0.15rem;
+    height: 0.95rem;
+    border-radius: 0.2rem;
 }
 
 .social-btn:nth-child(2) {
-    height: 0.89rem;
-    border-radius: 0.26rem;
+    height: 1.1rem;
+    border-radius: 0.3rem;
 }
 
 .social-btn:nth-child(-n+2)::before {
