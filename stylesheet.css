@@ -447,6 +447,7 @@ footer .logo {
     position: absolute;
     z-index: 0;
     margin: 0rem 1rem;
+    max-width: calc(100% - 6rem);
 }
 
 #music-card .hero .audio-player iframe {
